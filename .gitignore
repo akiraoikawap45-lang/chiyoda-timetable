@@ -1,0 +1,23 @@
+# 秘密情報（ODPTのアクセストークンなど）。絶対にGitに含めない
+.env
+.dev.vars
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# GTFSのダウンロードファイル・作業用ファイル
+*.zip
+tmp/
+cache/
+
+# Node.js / Cloudflare Workers（wrangler）
+node_modules/
+.wrangler/
+
+# OS・エディタが作るファイル
+.DS_Store
+Thumbs.db
+.vscode/

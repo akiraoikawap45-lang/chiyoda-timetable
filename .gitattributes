@@ -1,0 +1,7 @@
+# 改行コードをLFに統一する（WindowsでもLinuxでも同じ形で保存される）
+* text=auto eol=lf
+
+# 画像やzipは「テキストではない」と明示し、改行変換させない
+*.png binary
+*.ico binary
+*.zip binary
