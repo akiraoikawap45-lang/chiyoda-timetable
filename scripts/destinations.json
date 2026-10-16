@@ -1,0 +1,9 @@
+{
+  "我孫子": { "name": "我孫子", "category": "joban" },
+  "取手": { "name": "取手", "category": "joban" },
+  "柏": { "name": "柏", "category": "joban" },
+  "松戸": { "name": "松戸", "category": "joban" },
+  "綾瀬": { "name": "綾瀬", "category": "ayase" },
+  "北綾瀬": { "name": "北綾瀬", "category": "kitaayase" },
+  "北千住": { "name": "北千住", "category": "kitasenju" }
+}

@@ -1,0 +1,1 @@
+# build_timetable.py はPythonの標準ライブラリだけで動くため、追加のパッケージはありません。

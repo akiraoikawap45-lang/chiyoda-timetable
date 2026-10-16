@@ -1,0 +1,4216 @@
+{
+  "station": {
+    "code": "C08",
+    "name": "霞ケ関"
+  },
+  "feed_version": "20261008",
+  "services": {
+    "weekday": [
+      {
+        "time": "05:14",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B547S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "05:27",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B535S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "05:40",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B537S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "05:51",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B539S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "06:00",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B541E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "06:11",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B541S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "06:16",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B633S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "06:21",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B601S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "06:27",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B615K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "06:32",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B643S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "06:37",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B561E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "06:41",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B603S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "06:45",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B549E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "06:49",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B651S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "06:53",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B605S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "06:56",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B607S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "06:59",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B555S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "07:02",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B719S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "07:04",
+        "dest": "松戸",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B645S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "07:10",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B611S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "07:15",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B613K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "07:19",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B701K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "07:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B643E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "07:29",
+        "dest": "松戸",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B717S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "07:30",
+        "dest": "北千住",
+        "category": "kitasenju",
+        "type": "特急",
+        "train_number": "B607E",
+        "operator": "E",
+        "limited_express": true
+      },
+      {
+        "time": "07:35",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B721K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "07:38",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B709S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "07:41",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B553E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "07:44",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B759E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "07:47",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B723S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "07:50",
+        "dest": "松戸",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B723K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "07:53",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B651E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "07:56",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B719K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "07:59",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B747E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "08:02",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B702S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:05",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B757E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "08:08",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B704S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:11",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B765E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "08:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B645E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "08:18",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B807K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "08:20",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B703K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "08:24",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B757S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:27",
+        "dest": "松戸",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B825K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "08:29",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B731S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:32",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B806S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:35",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B763E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "08:37",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B839S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:40",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B725S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:42",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B805S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:45",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B761S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:48",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B827K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "08:51",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B817K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "08:54",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B841S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:56",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B753S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:59",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B811K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "09:01",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B805K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "09:04",
+        "dest": "松戸",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B815K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "09:07",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B759S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:09",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B801K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "09:12",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B845S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:15",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B827S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:16",
+        "dest": "北千住",
+        "category": "kitasenju",
+        "type": "特急",
+        "train_number": "B809E",
+        "operator": "E",
+        "limited_express": true
+      },
+      {
+        "time": "09:21",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B929S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B931K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "09:27",
+        "dest": "松戸",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B847S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:29",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B901S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:32",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B913S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:35",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B943S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:37",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B917S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:40",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B909K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "09:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B903S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:48",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B951E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "09:51",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B919S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B951S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:57",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B965E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "10:01",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B915S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B911S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:07",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B929K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "10:10",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B913K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "10:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B921S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:19",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1005S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:23",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1021K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "10:26",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B937S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:30",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1039S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B953E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "10:39",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1033S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1005K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "10:49",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1057E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "10:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1055S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:59",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1007K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "11:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1045E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "11:09",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1003K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "11:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1035S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "11:19",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1101S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "11:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1125S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "11:29",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1109K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "11:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1023K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "11:39",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1151E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "11:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1117K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "11:49",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1113K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "11:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1027K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "11:59",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1129K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "12:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1127S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:09",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1105S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1153S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:19",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1237S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1243S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:29",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1233S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1131S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:39",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1251S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1201K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "12:49",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1207K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "12:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1161S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:59",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1203K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "13:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1221K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "13:09",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1201S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "13:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1259S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "13:19",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1309K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "13:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1305K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "13:29",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1351E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "13:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1245S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "13:39",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1313K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "13:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1345E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "13:49",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1329K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "13:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1231K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "13:59",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1305S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1325S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:09",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1337S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1311S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:19",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1433S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1417K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "14:29",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1451S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1357S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:39",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1407K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "14:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1427S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:49",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1403K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "14:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1355S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:59",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1401S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1443S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:09",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1409K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "15:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1435S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:19",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1551E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "15:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1501K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "15:29",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1513K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "15:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1423K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "15:39",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1529K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "15:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1521K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "15:49",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1505S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1427K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "15:58",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1537S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:00",
+        "dest": "北千住",
+        "category": "kitasenju",
+        "type": "特急",
+        "train_number": "B1402E",
+        "operator": "E",
+        "limited_express": true
+      },
+      {
+        "time": "16:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1505K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "16:09",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1533S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1553S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:18",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1651S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:22",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1645E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "16:27",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1607K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "16:31",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1607S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:35",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1613S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:39",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1531S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:43",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1663E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "16:46",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1601S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:50",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1661E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "16:53",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1611S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:57",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1661S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:00",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1623S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:05",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1617K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "17:09",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1651E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "17:12",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1729S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:15",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1613K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "17:19",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1653E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "17:23",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1727S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:26",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1715K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "17:29",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1631K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "17:33",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1743E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "17:36",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1755S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:39",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1717S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:42",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1705S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:46",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1703K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "17:49",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1737S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:52",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1747E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "17:55",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1709K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "17:58",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1733S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:01",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1749S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:04",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1719K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "18:07",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1751S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:10",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1725S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:13",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1707S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:17",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1745S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:19",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1865E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "18:22",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1831S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:25",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1729K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "18:28",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1827S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:31",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1839S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:34",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1759S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:37",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1861E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "18:40",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1847S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:44",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1849E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "18:47",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1827K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "18:51",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1805K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "18:53",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1809S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:57",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1835S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:01",
+        "dest": "取手",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1853S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:04",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1857S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:09",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1957E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "19:12",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1841S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:15",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1821S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:18",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1913S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:23",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1915S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:27",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1843S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:32",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1901S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:36",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1823K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "19:41",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1911S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:45",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1803S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:50",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1929S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:55",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1961S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "20:00",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1917K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "20:05",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1923S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "20:09",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1953E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "20:12",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2005K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "20:16",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1907K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "20:20",
+        "dest": "柏",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2017S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "20:25",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1901K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "20:30",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2055S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "20:35",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1943E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "20:39",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B2047E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "20:43",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2031K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "20:48",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1921K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "20:52",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2005S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "20:57",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2009K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "21:01",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2065E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "21:06",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2015K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "21:11",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2039S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "21:16",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2013K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "21:21",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B2127S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "21:26",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2045S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "21:31",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2129K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "21:35",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2149S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "21:40",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2159S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "21:45",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2003K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "21:49",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B2157E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "21:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2113S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "21:59",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2133S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "22:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2121S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "22:10",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2125S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "22:15",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B2255S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "22:21",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2201S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "22:26",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2211S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "22:32",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2119K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "22:37",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2203S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "22:43",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2261S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "22:49",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2209K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "22:55",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2253S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "23:01",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2217S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "23:07",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2205K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "23:13",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2239S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "23:19",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2301K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "23:25",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2331K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "23:31",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2303K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "23:37",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2305S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "23:42",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2365E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "23:52",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2315K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "23:59",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2321K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "24:07",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B2345S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "24:14",
+        "dest": "松戸",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2429K",
+        "operator": "K",
+        "limited_express": false
+      }
+    ],
+    "holiday": [
+      {
+        "time": "05:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B529S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "05:27",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B517S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "05:41",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B519S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "05:53",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B521S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "06:03",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B515K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "06:12",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B523S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "06:21",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B609K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "06:29",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B641E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "06:37",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B601S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "06:45",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B617K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "06:53",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B537S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "06:59",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B605K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "07:05",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B603K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "07:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B639S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "07:21",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B719K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "07:28",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B701K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "07:32",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B715S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "07:36",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B649E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "07:43",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B713S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "07:49",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B721K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "07:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B641S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "07:59",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B725S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:04",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B723K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "08:09",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B733S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B645E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "08:19",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B817S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B831S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:29",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B819S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B829S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:39",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B811K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "08:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B815K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "08:49",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B825K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "08:54",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B743S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "08:59",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B823S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B809K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "09:09",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B827S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B821S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:18",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B915S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:23",
+        "dest": "松戸",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B917K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "09:24",
+        "dest": "北千住",
+        "category": "kitasenju",
+        "type": "特急",
+        "train_number": "B808E",
+        "operator": "E",
+        "limited_express": true
+      },
+      {
+        "time": "09:29",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B927K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "09:34",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B905K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "09:39",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B937S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "09:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B903K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "09:49",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B921K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "09:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B861E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "09:59",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B939S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B919K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "10:09",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B929K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "10:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B813K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "10:19",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1019S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B935S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:29",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1011K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "10:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1001S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:39",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1041S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1043S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:49",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1025S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "10:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1023K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "10:59",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1003S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "11:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1045E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "11:09",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1015S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "11:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1001K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "11:19",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1129S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "11:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1115K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "11:29",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1105K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "11:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1013S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "11:39",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1125K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "11:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1121K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "11:49",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1123S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "11:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1133S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "11:59",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1127S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1121S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:09",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1119S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1131S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:19",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1207S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:23",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1237S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:25",
+        "dest": "北千住",
+        "category": "kitasenju",
+        "type": "特急",
+        "train_number": "B1002E",
+        "operator": "E",
+        "limited_express": true
+      },
+      {
+        "time": "12:29",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1241S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1149E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "12:39",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1211K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "12:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1239S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:49",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1203S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "12:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1163E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "12:59",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1215S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "13:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1235S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "13:09",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1229S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "13:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1205S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "13:19",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1305K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "13:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1325K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "13:29",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1343S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "13:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1227K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "13:39",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1323S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "13:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1345E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "13:49",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1327S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "13:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1203K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "13:59",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1319S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1315K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "14:09",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1307S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1313K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "14:19",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1441S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1421K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "14:29",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1411K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "14:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1329K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "14:39",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1403S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1421S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:49",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1415S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "14:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1323K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "14:59",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1429S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1437S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:09",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1405K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "15:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1401S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:19",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1543S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1539S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:29",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1523S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1401K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "15:39",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1527S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1535S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:49",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1519S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1433S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "15:59",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1507S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1525K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "16:09",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1541S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1531S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:19",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1611K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "16:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1617K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "16:29",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1603S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1549E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "16:39",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1615S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1615K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "16:49",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1629S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "16:54",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1563E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "16:59",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1605K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "17:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1621K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "17:09",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1643S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1605S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:19",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1709S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:24",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1721S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:29",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1727S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:34",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1627K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "17:39",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1719S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1737S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:49",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1707S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:53",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1713K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "17:58",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1741S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "17:59",
+        "dest": "北千住",
+        "category": "kitasenju",
+        "type": "特急",
+        "train_number": "B1606E",
+        "operator": "E",
+        "limited_express": true
+      },
+      {
+        "time": "18:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1739S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:09",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1711K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "18:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1729K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "18:19",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1803S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:25",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1835S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:30",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1815S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:36",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1723K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "18:41",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1829S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:47",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1825K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "18:52",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1801S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "18:58",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1831S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:03",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1843S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:09",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1817K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "19:14",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1813S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:19",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B1949E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "19:25",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1859E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "19:30",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1915K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "19:31",
+        "dest": "北千住",
+        "category": "kitasenju",
+        "type": "特急",
+        "train_number": "B1716E",
+        "operator": "E",
+        "limited_express": true
+      },
+      {
+        "time": "19:36",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1963E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "19:41",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1933S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "19:47",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1921K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "19:53",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1905K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "19:59",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1905S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "20:04",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1911K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "20:10",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B1903K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "20:16",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2027K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "20:22",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2037S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "20:28",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2029S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "20:34",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B2041S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "20:40",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2011S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "20:46",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2039S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "20:51",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B1919S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "20:57",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2029K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "21:03",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2017K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "21:09",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2035S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "21:15",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2123K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "21:21",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2013K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "21:27",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2115K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "21:32",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2131S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "21:38",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2125K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "21:44",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2101S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "21:50",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2101K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "21:57",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2053E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "22:03",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2113S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "22:09",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2121S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "22:17",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2263E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "22:25",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2133S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "22:34",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2223S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "22:45",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2211K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "22:54",
+        "dest": "綾瀬",
+        "category": "ayase",
+        "type": "各駅停車",
+        "train_number": "B2227S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "23:03",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2227K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "23:13",
+        "dest": "北綾瀬",
+        "category": "kitaayase",
+        "type": "各駅停車",
+        "train_number": "B2229S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "23:21",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2311S",
+        "operator": "S",
+        "limited_express": false
+      },
+      {
+        "time": "23:31",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2365E",
+        "operator": "E",
+        "limited_express": false
+      },
+      {
+        "time": "23:41",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2329K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "23:53",
+        "dest": "我孫子",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2323K",
+        "operator": "K",
+        "limited_express": false
+      },
+      {
+        "time": "24:10",
+        "dest": "松戸",
+        "category": "joban",
+        "type": "各駅停車",
+        "train_number": "B2317K",
+        "operator": "K",
+        "limited_express": false
+      }
+    ]
+  }
+}
