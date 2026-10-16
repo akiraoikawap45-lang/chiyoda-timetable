@@ -212,3 +212,10 @@ async function init() {
 }
 
 init();
+
+// オフラインでも使えるように、Service Workerを登録する
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js").catch(() => {
+    // 登録できなくても、通常のWebページとして動く
+  });
+}
