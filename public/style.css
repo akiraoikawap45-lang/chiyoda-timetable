@@ -1,0 +1,112 @@
+/* 色などのデザインは後で調整する。今はシンプルに */
+
+:root {
+  --text: #222;
+  --muted: #888;
+  --line: #ddd;
+  --accent: #00a650; /* 千代田線のラインカラーに近い緑 */
+  --bg: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+header {
+  background: var(--accent);
+  color: #fff;
+  padding: 8px 16px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+main,
+footer {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 12px 0;
+}
+
+select,
+button {
+  font: inherit;
+  padding: 4px 8px;
+}
+
+.service-switch button[aria-pressed="true"] {
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid var(--accent);
+}
+
+#status {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 4px 0;
+}
+
+#show-earlier {
+  width: 100%;
+  margin: 8px 0;
+}
+
+/* 時刻表 */
+.hour {
+  margin: 12px 0 4px;
+  padding-bottom: 2px;
+  font-size: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.trains {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.train {
+  display: flex;
+  gap: 1em;
+  padding: 4px 0;
+}
+
+.train .time {
+  font-variant-numeric: tabular-nums;
+  min-width: 3em;
+}
+
+/* 常磐線へ直通しない便（綾瀬行き・北綾瀬行きなど）は薄く表示する */
+.train:not(.cat-joban) {
+  color: var(--muted);
+}
+
+/* 車両区分のアイコン用（今は表示しない） */
+.train .operator {
+  display: none;
+}
+
+footer {
+  margin-top: 24px;
+  padding-bottom: 24px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+footer a {
+  color: inherit;
+}

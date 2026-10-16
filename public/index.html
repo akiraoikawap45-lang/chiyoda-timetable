@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>千代田線 綾瀬方面 時刻表</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>千代田線 綾瀬方面 時刻表</h1>
+  </header>
+
+  <main>
+    <!-- 運行情報（ステップ5で表示する） -->
+    <section id="train-info" hidden></section>
+
+    <div class="controls">
+      <label>
+        駅
+        <select id="station"></select>
+      </label>
+      <div class="service-switch" role="group" aria-label="ダイヤ">
+        <button type="button" data-service="weekday">平日</button>
+        <button type="button" data-service="holiday">土休日</button>
+      </div>
+    </div>
+
+    <p id="status"></p>
+
+    <button type="button" id="show-earlier" hidden>前の時刻を表示</button>
+    <div id="timetable"></div>
+  </main>
+
+  <footer>
+    <p>
+      出典：<a href="https://www.odpt.org/" target="_blank" rel="noopener">公共交通オープンデータセンター</a>
+      （東京メトロの時刻表データ、<a href="https://developer.odpt.org/terms" target="_blank" rel="noopener">公共交通オープンデータ基本ライセンス</a>）
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
