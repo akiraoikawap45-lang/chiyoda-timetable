@@ -244,6 +244,26 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 
 各ステップで動作を確認してから次に進むこと。
 
+**1〜7はすべて完了（2026-10-19）**。現在は画面の細かい修正を随時行っている段階。
+
+## 公開先と運用
+
+| 対象 | アドレス・場所 |
+|---|---|
+| アプリ（Cloudflare Pages） | https://chiyoda-timetable.pages.dev/ |
+| 運行情報の中継（Worker `chiyoda-train-info`） | https://chiyoda-train-info.train-management.workers.dev/ |
+| GitHub | https://github.com/akiraoikawap45-lang/chiyoda-timetable （Public） |
+
+- **画面（`public/`）の変更**：GitHubにpushすると、Pagesが自動で公開し直す（GitHub連携）
+- **Worker（`worker/`）の変更**：pushでは反映されない。`worker/`で`npx wrangler deploy`を実行する
+  - Cloudflareの認証情報は`worker/.env`（`CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID`）。手元のWorker用のODPTトークンは`worker/.dev.vars`。どちらもGitに含めない
+  - Workerを公開し直すときに`ALLOWED_ORIGINS`（`wrangler.toml`）を確認する
+- **GitHub Actions**が毎日 午前4時（JST）にデータを更新してmainにコミットする。**作業の前とpushの前に`git pull`する**
+- GitHubへのpushは`gh`（GitHub CLI）のログインを使う。コンテナを作り直すと`gh`とログインが消えるので、`sudo apt-get install gh`のあと、`gh auth login --web`（デバイス認証。`workflow`の権限が必要）でログインし直し、`gh auth setup-git`を実行する
+- コミットの作者メールは非公開用（`344570276+akiraoikawap45-lang@users.noreply.github.com`、リポジトリの`git config`に設定済み）
+- 画面のファイル構成を変えたら、`public/sw.js`の`CACHE_NAME`の番号を上げ、`PRECACHE_FILES`を見直す
+- 開発者はスマホで動作確認する。Service Workerの仕組みで、反映には2回の開き直しが必要なことがある
+
 ## 将来の拡張候補（今は作らない）
 
 - JR常磐線の運行状況の表示（JR東日本はGTFS-RTのみ提供で、常磐線は羽鳥以南が対象。「公共交通オープンデータチャレンジ限定ライセンス」の条件確認が必要）
