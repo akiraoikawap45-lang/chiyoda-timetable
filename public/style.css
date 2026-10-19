@@ -1,4 +1,11 @@
-/* 色などのデザインは後で調整する。今はシンプルに */
+/* 時刻の数字用のフォント（Barlow、SIL Open Font License。fonts/OFL-Barlow.txt）
+   鉄道の案内表示で使われるDIN系の書体に近い。数字と英字だけを含む小さなファイル */
+@font-face {
+  font-family: "Barlow";
+  src: url("fonts/barlow-600.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap; /* 読み込み中は普通のフォントで表示しておく */
+}
 
 :root {
   --text: #222;
@@ -6,6 +13,8 @@
   --line: #ddd;
   --accent: #00a650; /* 千代田線のラインカラーに近い緑 */
   --bg: #fff;
+  --soft: #f4f6f5; /* 押したときなどの薄い背景 */
+  --time-font: "Barlow", system-ui, sans-serif;
 }
 
 body {
@@ -93,6 +102,38 @@ button {
   border: 1px solid var(--accent);
 }
 
+/* 折りたたむ行き先のチェックボックス */
+.fold-dests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 0 0 8px;
+  padding: 6px 12px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.fold-dests legend {
+  padding: 0 4px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.fold-dests label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 0; /* 指で押しやすいように少し広げる */
+}
+
+.fold-dests input {
+  width: 1.1em;
+  height: 1.1em;
+  margin: 0;
+  accent-color: var(--accent);
+}
+
 #status {
   color: var(--muted);
   font-size: 0.9rem;
@@ -106,10 +147,14 @@ button {
 
 /* 時刻表 */
 .hour {
-  margin: 12px 0 4px;
-  padding-bottom: 2px;
+  margin: 16px 0 0;
+  padding: 2px 8px;
+  font-family: var(--time-font);
   font-size: 1rem;
-  border-bottom: 1px solid var(--line);
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--soft);
+  border-left: 4px solid var(--accent);
 }
 
 .trains {
@@ -118,15 +163,37 @@ button {
   padding: 0;
 }
 
+/* 1便の行 */
 .train {
   display: flex;
-  gap: 1em;
-  padding: 4px 0;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+.train .operator {
+  flex: none;
+  width: 20px;
+  height: 24px;
 }
 
 .train .time {
-  font-variant-numeric: tabular-nums;
-  min-width: 3em;
+  min-width: 2.8em;
+  font-family: var(--time-font);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums; /* 数字の幅をそろえて、縦に並べたときにずれないようにする */
+}
+
+.train .type {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.train .dest {
+  font-weight: bold;
 }
 
 /* 常磐線へ直通しない便（綾瀬行き・北綾瀬行きなど）は薄く表示する */
@@ -134,9 +201,34 @@ button {
   color: var(--muted);
 }
 
-/* 車両区分のアイコン用（今は表示しない） */
-.train .operator {
-  display: none;
+/* 折りたたみ：普段は細い点線と本数だけ */
+.fold-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 2px 4px;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.fold-toggle::before,
+.fold-toggle::after {
+  content: "";
+  flex: 1;
+  border-top: 1px dashed var(--line);
+}
+
+/* 開いた中身は、左に線を引いて折りたたみの中だとわかるようにする */
+.fold .trains {
+  border-left: 3px solid var(--line);
+}
+
+.fold .train .time {
+  font-size: 1.3rem;
 }
 
 footer {

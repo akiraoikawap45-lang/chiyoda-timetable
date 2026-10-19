@@ -8,11 +8,23 @@ const STATIONS = [
   ["C13", "湯島"], ["C14", "根津"], ["C15", "千駄木"],
   ["C16", "西日暮里"], ["C17", "町屋"], ["C18", "北千住"],
 ];
-const DEFAULT_STATION = "C11";
-const STORAGE_KEY = "station";
+const DEFAULT_STATION = "C01"; // 初めて使うときは代々木上原
+const STORAGE_KEYS = { station: "station", foldedDests: "foldedDests" };
 const DAY_START_HOUR = 3; // 1日の区切りは午前3時
 const SERVICE_LABELS = { weekday: "平日", holiday: "土休日" };
 const WEEKDAYS = ["日", "月", "火", "水", "木", "金", "土"];
+
+// 車両の所属（trip_idの末尾の英字）
+const OPERATORS = {
+  S: { name: "東京メトロ", icon: "icons/train-s.png" },
+  K: { name: "JR東日本", icon: "icons/train-k.png" },
+  E: { name: "小田急", icon: "icons/train-e.png" },
+};
+
+// 常磐線へ直通しない便は、いつも折りたたむ
+const ALWAYS_FOLDED_CATEGORIES = ["ayase", "kitaayase"];
+// チェックボックスで折りたためる行き先（常磐線直通）
+const FOLDABLE_DESTS = ["松戸", "柏", "我孫子", "取手"];
 
 // 運行情報のWorkerのアドレス。手元で確認するときは、wrangler devで動かしたWorkerを使う
 const IS_LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname);
@@ -52,30 +64,44 @@ function displayTime(time) {
 }
 
 // 現在時刻の直前の1本から表示する。その位置（配列の番号）を返す。
-function findStartIndex(trains, minutes) {
-  const next = trains.findIndex((t) => timeToMinutes(t.time) >= minutes);
-  if (next === -1) return Math.max(0, trains.length - 1); // 終電後は最後の1本だけ
-  return Math.max(0, next - 1);
+// 折りたたむ便は「直前の1本」に数えず、その前の、普通に表示する便までさかのぼる。
+function findStartIndex(trains, minutes, isFolded) {
+  let next = trains.findIndex((t) => timeToMinutes(t.time) >= minutes);
+  if (next === -1) next = trains.length; // 終電後
+  for (let i = next - 1; i >= 0; i--) {
+    if (!isFolded(trains[i])) return i;
+  }
+  return Math.min(next, Math.max(0, trains.length - 1));
 }
 
 // ---------- localStorage（使えない環境でもエラーにしない） ----------
 
-function loadStation() {
+function readStorage(key) {
   try {
-    const code = localStorage.getItem(STORAGE_KEY);
-    if (STATIONS.some(([c]) => c === code)) return code;
+    return localStorage.getItem(key);
   } catch (e) {
     // プライベートモードなどで使えない場合は、何もしない
+    return null;
   }
-  return DEFAULT_STATION;
 }
 
-function saveStation(code) {
+function writeStorage(key, value) {
   try {
-    localStorage.setItem(STORAGE_KEY, code);
+    localStorage.setItem(key, value);
   } catch (e) {
     // 保存できなくても動作は続ける
   }
+}
+
+function loadStation() {
+  const code = readStorage(STORAGE_KEYS.station);
+  return STATIONS.some(([c]) => c === code) ? code : DEFAULT_STATION;
+}
+
+// 折りたたむ行き先は「松戸,柏」のようにカンマ区切りで保存する
+function loadFoldedDests() {
+  const saved = (readStorage(STORAGE_KEYS.foldedDests) || "").split(",");
+  return new Set(saved.filter((d) => FOLDABLE_DESTS.includes(d)));
 }
 
 // ---------- データの読み込み ----------
@@ -111,16 +137,23 @@ const state = {
   calendarKnown: false,
   timetable: null,
   showAll: false, // 「前の時刻を表示」を押したか
+  foldedDests: loadFoldedDests(), // チェックボックスで折りたたむ行き先
+  expanded: new Set(), // 開いた折りたたみ（先頭の便のtrip_idで覚える）
 };
 
 const el = {
   trainInfo: document.getElementById("train-info"),
   station: document.getElementById("station"),
   serviceButtons: document.querySelectorAll(".service-switch button"),
+  foldDests: document.getElementById("fold-dests"),
   status: document.getElementById("status"),
   showEarlier: document.getElementById("show-earlier"),
   timetable: document.getElementById("timetable"),
 };
+
+function isFolded(t) {
+  return ALWAYS_FOLDED_CATEGORIES.includes(t.category) || state.foldedDests.has(t.dest);
+}
 
 function render() {
   const day = getServiceDay(new Date());
@@ -140,15 +173,17 @@ function render() {
 
   // 特急は表示しない
   const trains = state.timetable.services[state.service].filter((t) => !t.limited_express);
-  const start = state.showAll ? 0 : findStartIndex(trains, day.minutes);
+  const start = state.showAll ? 0 : findStartIndex(trains, day.minutes, isFolded);
   el.showEarlier.hidden = start === 0;
 
   let currentHour = null;
   let list = null;
+  let fold = null; // 今まとめている折りたたみ（続けて並ぶ折りたたみ対象の便を1つにまとめる）
   for (const t of trains.slice(start)) {
     const hour = Number(t.time.split(":")[0]) % 24; // 24時台は「0時」の見出しに入れる
     if (hour !== currentHour) {
       currentHour = hour;
+      fold = null;
       const h = document.createElement("h2");
       h.className = "hour";
       h.textContent = `${hour}時`;
@@ -156,21 +191,96 @@ function render() {
       list.className = "trains";
       el.timetable.append(h, list);
     }
-    list.append(trainRow(t));
+    if (isFolded(t)) {
+      if (!fold) {
+        fold = foldGroup(t.trip_id);
+        list.append(fold.li);
+      }
+      fold.add(t);
+    } else {
+      fold = null;
+      list.append(trainRow(t));
+    }
   }
 }
 
+// 1便の行
 function trainRow(t) {
   const li = document.createElement("li");
   li.className = `train cat-${t.category} op-${t.operator}`;
   li.append(
     span("time", displayTime(t.time)),
+    operatorIcon(t.operator),
     span("type", t.type),
     span("dest", `${t.dest} 行き`),
-    span("operator", ""), // 車両区分のアイコン用（今は空）
   );
-  li.lastChild.dataset.operator = t.operator;
   return li;
+}
+
+function operatorIcon(code) {
+  const op = OPERATORS[code];
+  if (!op) return span("operator", ""); // 想定外の車両区分：場所だけ空けておく
+  const img = document.createElement("img");
+  img.className = "operator";
+  img.src = op.icon;
+  img.alt = `${op.name}の車両`;
+  img.width = 20;
+  img.height = 24;
+  return img;
+}
+
+// 折りたたみ。普段は細い線と本数だけを表示し、タップすると中の便を表示する
+function foldGroup(key) {
+  const li = document.createElement("li");
+  li.className = "fold";
+  const toggle = document.createElement("button");
+  toggle.type = "button";
+  toggle.className = "fold-toggle";
+  const inner = document.createElement("ul");
+  inner.className = "trains";
+  li.append(toggle, inner);
+
+  let count = 0;
+  const update = () => {
+    const open = state.expanded.has(key);
+    inner.hidden = !open;
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.textContent = open ? "たたむ" : `${count}本`;
+    toggle.setAttribute("aria-label", open ? "折りたたむ" : `折りたたんだ列車${count}本を表示`);
+  };
+  toggle.addEventListener("click", () => {
+    if (state.expanded.has(key)) state.expanded.delete(key);
+    else state.expanded.add(key);
+    update();
+  });
+
+  return {
+    li,
+    add(t) {
+      count++;
+      inner.append(trainRow(t));
+      update();
+    },
+  };
+}
+
+// 行き先のチェックボックスを作る
+function buildFoldCheckboxes() {
+  for (const dest of FOLDABLE_DESTS) {
+    const label = document.createElement("label");
+    const box = document.createElement("input");
+    box.type = "checkbox";
+    box.value = dest;
+    box.checked = state.foldedDests.has(dest);
+    box.addEventListener("change", () => {
+      if (box.checked) state.foldedDests.add(dest);
+      else state.foldedDests.delete(dest);
+      writeStorage(STORAGE_KEYS.foldedDests, [...state.foldedDests].join(","));
+      render();
+    });
+    label.append(box, dest);
+    el.foldDests.append(label);
+  }
 }
 
 function span(className, text) {
@@ -210,6 +320,7 @@ async function loadTrainInfo() {
 async function loadStationTimetable() {
   state.timetable = null;
   state.showAll = false;
+  state.expanded.clear();
   render();
   try {
     state.timetable = await fetchJson(`data/${state.station}.json`);
@@ -225,6 +336,7 @@ async function init() {
     el.station.append(new Option(name, code));
   }
   el.station.value = state.station;
+  buildFoldCheckboxes();
 
   // 今日が平日ダイヤか土休日ダイヤかを決める
   const day = getServiceDay(new Date());
@@ -241,12 +353,13 @@ async function init() {
 
   el.station.addEventListener("change", () => {
     state.station = el.station.value;
-    saveStation(state.station);
+    writeStorage(STORAGE_KEYS.station, state.station);
     loadStationTimetable();
   });
   el.serviceButtons.forEach((b) => b.addEventListener("click", () => {
     state.service = b.dataset.service;
     state.showAll = false;
+    state.expanded.clear();
     render();
   }));
   el.showEarlier.addEventListener("click", () => {

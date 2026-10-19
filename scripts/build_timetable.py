@@ -29,6 +29,9 @@ GTFS_URL = "https://api.odpt.org/api/v4/files/TokyoMetro/data/TokyoMetro-Train-G
 ROUTE_NAME = "千代田線"
 DIRECTION_ID = "0"  # 綾瀬方面
 STATION_CODES = [f"C{i:02d}" for i in range(1, 19)]  # C01（代々木上原）〜C18（北千住）
+# 列車の詳細時刻（trips.json）には、終点の綾瀬・北綾瀬も含める
+# （GTFSには綾瀬より先、JR常磐線内の時刻は入っていない）
+TRIP_STOP_CODES = STATION_CODES + ["C19", "C20"]
 SERVICE_NAMES = {"0": "weekday", "1": "holiday"}  # GTFSのservice_id → JSONでの呼び名
 OPERATORS = {"S", "K", "E"}  # 東京メトロ、JR東日本、小田急
 CALENDAR_DAYS = 90
@@ -170,7 +173,7 @@ def main():
         for t in read_csv(zf, "trips.txt")
         if t["route_id"] in route_ids and t["direction_id"] == DIRECTION_ID
     }
-    stops = {s["stop_id"]: s for s in read_csv(zf, "stops.txt") if s["stop_code"] in STATION_CODES}
+    stops = {s["stop_id"]: s for s in read_csv(zf, "stops.txt") if s["stop_code"] in TRIP_STOP_CODES}
 
     stop_times_by_trip = {}
     for st in read_csv(zf, "stop_times.txt"):
@@ -182,6 +185,7 @@ def main():
 
     # 4. 駅ごとに、発車する便の情報を集める
     stations = {code: {"weekday": [], "holiday": []} for code in STATION_CODES}
+    trip_details = {}  # trip_id → [[駅コード, 時刻], ...]（列車の詳細時刻）
     for trip_id, trip in trips.items():
         service = SERVICE_NAMES.get(trip["service_id"])
         if service is None:
@@ -207,16 +211,25 @@ def main():
                 warn(f"対応表にない行き先: {headsign}（scripts/destinations.json に追加してください）")
                 warned.add(("dest", headsign))
 
+        # 列車の詳細時刻：停車する駅を順に並べる（通過駅は除く）
+        rows = sorted(rows, key=lambda r: int(r["stop_sequence"]))
+        trip_details[trip_id] = [
+            [stops[r["stop_id"]]["stop_code"], (r["departure_time"] or r["arrival_time"])[:5]]
+            for r in rows
+            if r["stop_id"] in stops and r["departure_time"]
+        ]
+
         for r in rows:
             stop = stops.get(r["stop_id"])
-            if stop is None:
-                continue  # 綾瀬・北綾瀬など対象外の駅
+            if stop is None or stop["stop_code"] not in STATION_CODES:
+                continue  # 綾瀬・北綾瀬など、時刻表の対象外の駅
             if not r["departure_time"]:
                 continue  # 通過
             if r["pickup_type"] == "1":
                 continue  # 乗車できない（終点など）
             stations[stop["stop_code"]][service].append({
                 "_sort": to_seconds(r["departure_time"]),
+                "trip_id": trip_id,
                 "time": r["departure_time"][:5],
                 "dest": dest["name"],
                 "category": dest["category"],
@@ -239,6 +252,18 @@ def main():
             "services": services,
         })
         print(f"{code}.json {name}: 平日{len(services['weekday'])}本 土休日{len(services['holiday'])}本")
+
+    # 6. 列車の詳細時刻（全便分を1つのファイルにまとめる）
+    # 中身は大きくなるので、インデントなしで書き出す
+    station_names = {s["stop_code"]: s["stop_name"] for s in stops.values()}
+    with open(OUT_DIR / "trips.json", "w", encoding="utf-8", newline="\n") as f:
+        json.dump({
+            "feed_version": feed["feed_version"],
+            "stations": {code: station_names[code] for code in TRIP_STOP_CODES},
+            "trips": dict(sorted(trip_details.items())),
+        }, f, ensure_ascii=False, separators=(",", ":"))
+        f.write("\n")
+    print(f"trips.json: {len(trip_details)}便")
 
     write_json(meta_path, {
         "feed_version": feed["feed_version"],

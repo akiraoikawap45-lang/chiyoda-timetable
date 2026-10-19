@@ -4,7 +4,7 @@
 
 公共交通オープンデータチャレンジ2026（応募締切：2027-01-11 23:59 JST）への応募を目指す、Webアプリ（PWA）。
 
-**趣旨**：東京メトロ千代田線の各駅から常磐線方面へ行く利用者向けに、発駅の「綾瀬方面」時刻表を表示する。常磐線へ直通しない綾瀬行き・北綾瀬行きは区別できる見た目にする（非表示にはしない）。
+**趣旨**：東京メトロ千代田線の各駅から常磐線方面へ行く利用者向けに、発駅の「綾瀬方面」時刻表を表示する。常磐線へ直通しない綾瀬行き・北綾瀬行きは折りたたんで表示する（消さずに、タップで開ける）。
 
 - 対象：東京メトロ千代田線、綾瀬方面のみ
 - 対象駅：代々木上原（C01）〜北千住（C18）の18駅。綾瀬（C19）・北綾瀬（C20）は対象外
@@ -83,6 +83,7 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 4. 各便に次の情報を付ける：時刻、行き先、行き先の分類、車両区分、列車番号、特急かどうか
 5. 駅ごとにJSONを出力する（`public/data/C11.json`など）
 6. 日付ごとのダイヤ対応表を出力する（`public/data/calendar.json`）。`calendar.txt`と`calendar_dates.txt`を合成し、実行日から90日分
+7. 列車ごとの詳細時刻を出力する（`public/data/trips.json`）。C01〜C20（綾瀬・北綾瀬を含む）の停車駅と時刻。**GTFSには綾瀬より先（JR常磐線内）の時刻は含まれない**。現在は画面で使っていない（将来の拡張用）
 
 `feed_end_date`まで30日を切ったら、Actionsのログに警告を出す（3月のダイヤ改正前の確認用）。
 
@@ -117,6 +118,7 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
         "dest": "我孫子",
         "category": "joban",
         "type": "各駅停車",
+        "trip_id": "50B1309K00",
         "train_number": "B1309K",
         "operator": "K",
         "limited_express": false
@@ -130,6 +132,13 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 - `time`はGTFSの時刻をそのまま`HH:MM`にする（`24:12`のまま）
 - 特急も`limited_express: true`として出力する（画面側で除外する）
 - `type`は特急なら`"特急"`、それ以外は`"各駅停車"`
+- `trip_id`は`trips.json`の詳細時刻を引くためのキー
+
+`public/data/trips.json`（容量を抑えるため、インデントなしで出力）
+
+```json
+{ "feed_version": "20261008", "stations": { "C01": "代々木上原" }, "trips": { "50B0547S00": [["C01", "05:00"], ["C19", "05:39"]] } }
+```
 
 `public/data/calendar.json`
 
@@ -149,10 +158,13 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 ```
 
 - 時ごとの見出しの下に、1便1行で並べる。行き先は略さない
-- 綾瀬行き・北綾瀬行きも表示する。見た目の区別はCSSで行うので、各行に分類と車両区分のクラスを付ける（例：`class="train cat-joban op-K"`）
+- 綾瀬行き・北綾瀬行きは**折りたたむ**。続けて並ぶ便は1つにまとめ、普段は点線と「◯本」だけを表示し、タップで開く
+- 行き先のチェックボックス（松戸・柏・我孫子・取手）で、チェックした行き先も同様に折りたたむ。選択は`localStorage`に保存する
+- 各行に分類と車両区分のクラスを付ける（例：`class="train cat-joban op-K"`）
+- 時刻の数字はBarlow（`public/fonts/`、SIL OFL）で大きく表示する
 - 色などのデザインは後で調整する。最初はシンプルでよい
 - 特急（`limited_express: true`）は表示しない
-- 車両区分は、後でアイコンを付けられるように要素を用意しておく（最初は表示しなくてよい）
+- 車両区分のアイコンを、時刻と「各駅停車」の間に表示する（`public/icons/train-s.png`・`train-k.png`・`train-e.png`）
 
 ### 表示開始位置
 
@@ -168,7 +180,7 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 
 ### その他
 
-- 駅は選択式（C01〜C18）。前回選んだ駅を`localStorage`に保存する（使えない環境でも動くようにする）
+- 駅は選択式（C01〜C18）。前回選んだ駅を`localStorage`に保存する（使えない環境でも動くようにする）。初回は代々木上原（C01）
 - 平日・土休日は`calendar.json`で自動判定し、手動でも切り替えられる
 - 運行情報（千代田線）を時刻表の上に表示する。取得できない場合は「運行情報を取得できません」と出し、時刻表は表示を続ける
 - 出典（公共交通オープンデータセンター）を表記する
@@ -232,5 +244,5 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 ## 将来の拡張候補（今は作らない）
 
 - JR常磐線の運行状況の表示（JR東日本はGTFS-RTのみ提供で、常磐線は羽鳥以南が対象。「公共交通オープンデータチャレンジ限定ライセンス」の条件確認が必要）
-- 車両区分のアイコン表示
 - 特急の通過情報の活用
+- 列車をタップして、終点までの各駅の時刻を表示する（`trips.json`を使う。JR常磐線内の時刻がないため一旦見送り）
