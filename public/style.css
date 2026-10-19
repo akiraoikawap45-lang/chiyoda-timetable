@@ -34,6 +34,45 @@ footer {
   padding: 0 16px;
 }
 
+/* 運行情報 */
+#train-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.5em;
+  margin: 12px 0;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+#train-info[hidden] {
+  display: none;
+}
+
+#train-info .label {
+  font-weight: bold;
+  width: 100%;
+}
+
+#train-info .date {
+  color: var(--muted);
+}
+
+#train-info.alert {
+  border-color: #d00;
+  background: #fff3f3;
+}
+
+#train-info.alert .status {
+  color: #d00;
+  font-weight: bold;
+}
+
+#train-info.unavailable {
+  color: var(--muted);
+}
+
 .controls {
   display: flex;
   flex-wrap: wrap;

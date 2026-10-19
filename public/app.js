@@ -14,6 +14,13 @@ const DAY_START_HOUR = 3; // 1日の区切りは午前3時
 const SERVICE_LABELS = { weekday: "平日", holiday: "土休日" };
 const WEEKDAYS = ["日", "月", "火", "水", "木", "金", "土"];
 
+// 運行情報のWorkerのアドレス。手元で確認するときは、wrangler devで動かしたWorkerを使う
+const IS_LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname);
+const TRAIN_INFO_URL = IS_LOCAL
+  ? `http://${location.hostname}:8787/`
+  : null; // TODO: Workerを公開したら、そのアドレス（https://〜.workers.dev/）を入れる
+const TRAIN_INFO_TIMEOUT_MS = 8000;
+
 // ---------- 計算だけをする関数（画面に触らない） ----------
 
 // 「運行日」と「その運行日の0時から何分たったか」を返す。
@@ -80,6 +87,21 @@ async function fetchJson(url) {
   return res.json();
 }
 
+// 運行情報を取得する。失敗したら例外を投げる
+async function fetchTrainInfo() {
+  if (!TRAIN_INFO_URL) throw new Error("運行情報のアドレスが未設定");
+  // 電波が弱いときに待ち続けないよう、一定時間で打ち切る
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), TRAIN_INFO_TIMEOUT_MS);
+  try {
+    const res = await fetch(TRAIN_INFO_URL, { signal: controller.signal });
+    if (!res.ok) throw new Error(`運行情報: ${res.status}`);
+    return await res.json();
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 // ---------- 画面 ----------
 
 const state = {
@@ -92,6 +114,7 @@ const state = {
 };
 
 const el = {
+  trainInfo: document.getElementById("train-info"),
   station: document.getElementById("station"),
   serviceButtons: document.querySelectorAll(".service-switch button"),
   status: document.getElementById("status"),
@@ -157,6 +180,33 @@ function span(className, text) {
   return s;
 }
 
+// 運行情報を表示する。取得できなくても、時刻表の表示には影響させない
+async function loadTrainInfo() {
+  const box = el.trainInfo;
+  box.hidden = false;
+  box.className = "";
+  box.textContent = "";
+  let info;
+  try {
+    info = await fetchTrainInfo();
+  } catch (e) {
+    box.className = "unavailable";
+    box.append(span("label", "運行情報"), span("text", "運行情報を取得できません"));
+    return;
+  }
+  // status は平常時にはなく、遅延や運転見合わせのときに入る
+  box.className = info.status ? "alert" : "normal";
+  box.append(span("label", `運行情報（${info.railway}）`));
+  if (info.status) box.append(span("status", info.status));
+  box.append(span("text", info.text || ""));
+  if (info.date) {
+    const t = new Date(info.date);
+    const hh = String(t.getHours()).padStart(2, "0");
+    const mm = String(t.getMinutes()).padStart(2, "0");
+    box.append(span("date", `${hh}:${mm} 発表`));
+  }
+}
+
 async function loadStationTimetable() {
   state.timetable = null;
   state.showAll = false;
@@ -204,10 +254,14 @@ async function init() {
     render();
   });
   // しばらく後にアプリへ戻ってきたとき、表示位置を今の時刻に合わせ直す
+  // 運行情報も取り直す
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible" && !state.showAll) render();
+    if (document.visibilityState !== "visible") return;
+    if (!state.showAll) render();
+    loadTrainInfo();
   });
 
+  loadTrainInfo();
   loadStationTimetable();
 }
 
