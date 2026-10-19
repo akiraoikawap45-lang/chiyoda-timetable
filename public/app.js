@@ -18,7 +18,7 @@ const WEEKDAYS = ["日", "月", "火", "水", "木", "金", "土"];
 const IS_LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname);
 const TRAIN_INFO_URL = IS_LOCAL
   ? `http://${location.hostname}:8787/`
-  : null; // TODO: Workerを公開したら、そのアドレス（https://〜.workers.dev/）を入れる
+  : "https://chiyoda-train-info.train-management.workers.dev/";
 const TRAIN_INFO_TIMEOUT_MS = 8000;
 
 // ---------- 計算だけをする関数（画面に触らない） ----------

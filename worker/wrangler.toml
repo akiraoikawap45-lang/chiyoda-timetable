@@ -3,8 +3,8 @@ main = "src/index.js"
 compatibility_date = "2026-10-01"
 
 [vars]
-# 呼び出しを許可する公開先（カンマ区切り）。Pagesで公開したら、そのアドレスを追加する
-ALLOWED_ORIGINS = "http://localhost:8000,http://127.0.0.1:8000"
+# 呼び出しを許可する公開先（カンマ区切り）
+ALLOWED_ORIGINS = "https://chiyoda-timetable.pages.dev,http://localhost:8000,http://127.0.0.1:8000"
 
 # ODPT_TOKEN は秘密情報なので、ここには書かない。
 #   本番：npx wrangler secret put ODPT_TOKEN
