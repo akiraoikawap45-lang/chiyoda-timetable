@@ -196,6 +196,16 @@ button {
   font-weight: bold;
 }
 
+/* 当駅始発 */
+.train .origin {
+  padding: 1px 6px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: var(--accent);
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
 /* 常磐線へ直通しない便（綾瀬行き・北綾瀬行きなど）は薄く表示する */
 .train:not(.cat-joban) {
   color: var(--muted);

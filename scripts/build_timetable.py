@@ -219,6 +219,11 @@ def main():
             if r["stop_id"] in stops and r["departure_time"]
         ]
 
+        # 当駅始発：その便の最初の停車駅。ただし代々木上原は除く
+        # （データ上は全便が代々木上原から始まるが、実際は小田急線から直通してくる便もあり、区別できないため）
+        first_stop = stops.get(rows[0]["stop_id"]) if rows else None
+        origin_code = first_stop["stop_code"] if first_stop and first_stop["stop_code"] != "C01" else None
+
         for r in rows:
             stop = stops.get(r["stop_id"])
             if stop is None or stop["stop_code"] not in STATION_CODES:
@@ -237,6 +242,7 @@ def main():
                 "train_number": train_number,
                 "operator": operator,
                 "limited_express": limited_express,
+                "origin": stop["stop_code"] == origin_code,
             })
 
     # 5. 駅ごとにJSONを書き出す

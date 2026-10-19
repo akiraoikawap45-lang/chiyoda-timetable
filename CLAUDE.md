@@ -121,7 +121,8 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
         "trip_id": "50B1309K00",
         "train_number": "B1309K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       }
     ],
     "holiday": []
@@ -133,6 +134,7 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 - 特急も`limited_express: true`として出力する（画面側で除外する）
 - `type`は特急なら`"特急"`、それ以外は`"各駅停車"`
 - `trip_id`は`trips.json`の詳細時刻を引くためのキー
+- `origin`は当駅始発かどうか（その便の最初の停車駅）。**代々木上原では常に`false`**：データ上は全便が代々木上原から始まるが、小田急線からの直通便を区別できないため
 
 `public/data/trips.json`（容量を抑えるため、インデントなしで出力）
 
@@ -158,8 +160,9 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 ```
 
 - 時ごとの見出しの下に、1便1行で並べる。行き先は略さない
-- 綾瀬行き・北綾瀬行きは**折りたたむ**。続けて並ぶ便は1つにまとめ、普段は点線と「◯本」だけを表示し、タップで開く
-- 行き先のチェックボックス（松戸・柏・我孫子・取手）で、チェックした行き先も同様に折りたたむ。選択は`localStorage`に保存する
+- 行き先のチェックボックス（松戸・柏・我孫子・取手・綾瀬・北綾瀬）で、チェックした行き先を**折りたたむ**。続けて並ぶ便は1つにまとめ、普段は点線と「◯本」だけを表示し、タップで開く
+- 初期状態は綾瀬・北綾瀬にチェック。選択は`localStorage`に保存する
+- 当駅始発の便は、行き先の後ろに「当駅始発」と表示する
 - 各行に分類と車両区分のクラスを付ける（例：`class="train cat-joban op-K"`）
 - 時刻の数字はBarlow（`public/fonts/`、SIL OFL）で大きく表示する
 - 色などのデザインは後で調整する。最初はシンプルでよい
@@ -182,7 +185,7 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 
 - 駅は選択式（C01〜C18）。前回選んだ駅を`localStorage`に保存する（使えない環境でも動くようにする）。初回は代々木上原（C01）
 - 平日・土休日は`calendar.json`で自動判定し、手動でも切り替えられる
-- 運行情報（千代田線）を時刻表の上に表示する。取得できない場合は「運行情報を取得できません」と出し、時刻表は表示を続ける
+- 運行情報（千代田線）を時刻表の上に表示する。時刻は「13:58 現在」の形で表示する（ODPTのデータ作成時刻）。取得できない場合は「運行情報を取得できません」と出し、時刻表は表示を続ける
 - 出典（公共交通オープンデータセンター）を表記する
 
 ### PWA

@@ -9,7 +9,8 @@ const STATIONS = [
   ["C16", "西日暮里"], ["C17", "町屋"], ["C18", "北千住"],
 ];
 const DEFAULT_STATION = "C01"; // 初めて使うときは代々木上原
-const STORAGE_KEYS = { station: "station", foldedDests: "foldedDests" };
+// foldedDests2：綾瀬・北綾瀬もチェックボックスで選べるようにしたときに、保存の形式が変わったので名前を変えた
+const STORAGE_KEYS = { station: "station", foldedDests: "foldedDests2" };
 const DAY_START_HOUR = 3; // 1日の区切りは午前3時
 const SERVICE_LABELS = { weekday: "平日", holiday: "土休日" };
 const WEEKDAYS = ["日", "月", "火", "水", "木", "金", "土"];
@@ -21,10 +22,10 @@ const OPERATORS = {
   E: { name: "小田急", icon: "icons/train-e.png" },
 };
 
-// 常磐線へ直通しない便は、いつも折りたたむ
-const ALWAYS_FOLDED_CATEGORIES = ["ayase", "kitaayase"];
-// チェックボックスで折りたためる行き先（常磐線直通）
-const FOLDABLE_DESTS = ["松戸", "柏", "我孫子", "取手"];
+// チェックボックスで折りたためる行き先
+const FOLDABLE_DESTS = ["松戸", "柏", "我孫子", "取手", "綾瀬", "北綾瀬"];
+// 最初はチェックを入れておく行き先（常磐線へ直通しない便）
+const DEFAULT_FOLDED_DESTS = ["綾瀬", "北綾瀬"];
 
 // 運行情報のWorkerのアドレス。手元で確認するときは、wrangler devで動かしたWorkerを使う
 const IS_LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname);
@@ -98,10 +99,12 @@ function loadStation() {
   return STATIONS.some(([c]) => c === code) ? code : DEFAULT_STATION;
 }
 
-// 折りたたむ行き先は「松戸,柏」のようにカンマ区切りで保存する
+// 折りたたむ行き先は「綾瀬,北綾瀬,松戸」のようにカンマ区切りで保存する。
+// まだ一度も保存していなければ、最初の設定（綾瀬・北綾瀬）にする
 function loadFoldedDests() {
-  const saved = (readStorage(STORAGE_KEYS.foldedDests) || "").split(",");
-  return new Set(saved.filter((d) => FOLDABLE_DESTS.includes(d)));
+  const saved = readStorage(STORAGE_KEYS.foldedDests);
+  if (saved === null) return new Set(DEFAULT_FOLDED_DESTS);
+  return new Set(saved.split(",").filter((d) => FOLDABLE_DESTS.includes(d)));
 }
 
 // ---------- データの読み込み ----------
@@ -152,7 +155,7 @@ const el = {
 };
 
 function isFolded(t) {
-  return ALWAYS_FOLDED_CATEGORIES.includes(t.category) || state.foldedDests.has(t.dest);
+  return state.foldedDests.has(t.dest);
 }
 
 function render() {
@@ -214,6 +217,7 @@ function trainRow(t) {
     span("type", t.type),
     span("dest", `${t.dest} 行き`),
   );
+  if (t.origin) li.append(span("origin", "当駅始発"));
   return li;
 }
 
@@ -313,7 +317,7 @@ async function loadTrainInfo() {
     const t = new Date(info.date);
     const hh = String(t.getHours()).padStart(2, "0");
     const mm = String(t.getMinutes()).padStart(2, "0");
-    box.append(span("date", `${hh}:${mm} 発表`));
+    box.append(span("date", `${hh}:${mm} 現在`));
   }
 }
 

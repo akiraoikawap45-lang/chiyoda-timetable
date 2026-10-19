@@ -48,7 +48,7 @@ async function fetchTrainInfo(env) {
     railway: "千代田線",
     text: ja(info["odpt:trainInformationText"]), // 例：現在、平常どおり運転しています。
     status: ja(info["odpt:trainInformationStatus"]), // 平常時はない。例：運転見合わせ、遅延
-    date: info["dc:date"] ?? null, // 情報の発表時刻
+    date: info["dc:date"] ?? null, // データの作成時刻（数分おきに更新される。画面では「◯◯現在」と表示）
   };
 }
 

@@ -14,7 +14,8 @@
         "type": "各駅停車",
         "train_number": "B547S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0535S00",
@@ -24,7 +25,8 @@
         "type": "各駅停車",
         "train_number": "B535S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0537S00",
@@ -34,7 +36,8 @@
         "type": "各駅停車",
         "train_number": "B537S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0539S00",
@@ -44,7 +47,8 @@
         "type": "各駅停車",
         "train_number": "B539S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0541E00",
@@ -54,7 +58,8 @@
         "type": "各駅停車",
         "train_number": "B541E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0541S00",
@@ -64,7 +69,8 @@
         "type": "各駅停車",
         "train_number": "B541S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0601S00",
@@ -74,7 +80,8 @@
         "type": "各駅停車",
         "train_number": "B601S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0615K00",
@@ -84,7 +91,8 @@
         "type": "各駅停車",
         "train_number": "B615K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0643S00",
@@ -94,7 +102,8 @@
         "type": "各駅停車",
         "train_number": "B643S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0561E00",
@@ -104,7 +113,8 @@
         "type": "各駅停車",
         "train_number": "B561E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0603S00",
@@ -114,7 +124,8 @@
         "type": "各駅停車",
         "train_number": "B603S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0549E00",
@@ -124,7 +135,8 @@
         "type": "各駅停車",
         "train_number": "B549E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0651S00",
@@ -134,7 +146,8 @@
         "type": "各駅停車",
         "train_number": "B651S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0605S00",
@@ -144,7 +157,8 @@
         "type": "各駅停車",
         "train_number": "B605S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0607S00",
@@ -154,7 +168,8 @@
         "type": "各駅停車",
         "train_number": "B607S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0555S00",
@@ -164,7 +179,8 @@
         "type": "各駅停車",
         "train_number": "B555S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0645S00",
@@ -174,7 +190,8 @@
         "type": "各駅停車",
         "train_number": "B645S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0611S00",
@@ -184,7 +201,8 @@
         "type": "各駅停車",
         "train_number": "B611S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0613K00",
@@ -194,7 +212,8 @@
         "type": "各駅停車",
         "train_number": "B613K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0701K00",
@@ -204,7 +223,8 @@
         "type": "各駅停車",
         "train_number": "B701K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0643E00",
@@ -214,7 +234,8 @@
         "type": "各駅停車",
         "train_number": "B643E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0717S00",
@@ -224,7 +245,8 @@
         "type": "各駅停車",
         "train_number": "B717S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0709S00",
@@ -234,7 +256,8 @@
         "type": "各駅停車",
         "train_number": "B709S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0553E00",
@@ -244,7 +267,8 @@
         "type": "各駅停車",
         "train_number": "B553E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0759E00",
@@ -254,7 +278,8 @@
         "type": "各駅停車",
         "train_number": "B759E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0723S00",
@@ -264,7 +289,8 @@
         "type": "各駅停車",
         "train_number": "B723S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0651E00",
@@ -274,7 +300,8 @@
         "type": "各駅停車",
         "train_number": "B651E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0719K00",
@@ -284,7 +311,8 @@
         "type": "各駅停車",
         "train_number": "B719K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0747E00",
@@ -294,7 +322,8 @@
         "type": "各駅停車",
         "train_number": "B747E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0702S00",
@@ -304,7 +333,8 @@
         "type": "各駅停車",
         "train_number": "B702S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0757E00",
@@ -314,7 +344,8 @@
         "type": "各駅停車",
         "train_number": "B757E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0704S00",
@@ -324,7 +355,8 @@
         "type": "各駅停車",
         "train_number": "B704S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0765E00",
@@ -334,7 +366,8 @@
         "type": "各駅停車",
         "train_number": "B765E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0645E00",
@@ -344,7 +377,8 @@
         "type": "各駅停車",
         "train_number": "B645E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0807K00",
@@ -354,7 +388,8 @@
         "type": "各駅停車",
         "train_number": "B807K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0703K00",
@@ -364,7 +399,8 @@
         "type": "各駅停車",
         "train_number": "B703K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0757S00",
@@ -374,7 +410,8 @@
         "type": "各駅停車",
         "train_number": "B757S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0825K00",
@@ -384,7 +421,8 @@
         "type": "各駅停車",
         "train_number": "B825K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0731S00",
@@ -394,7 +432,8 @@
         "type": "各駅停車",
         "train_number": "B731S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0806S00",
@@ -404,7 +443,8 @@
         "type": "各駅停車",
         "train_number": "B806S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0763E00",
@@ -414,7 +454,8 @@
         "type": "各駅停車",
         "train_number": "B763E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0839S00",
@@ -424,7 +465,8 @@
         "type": "各駅停車",
         "train_number": "B839S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0725S00",
@@ -434,7 +476,8 @@
         "type": "各駅停車",
         "train_number": "B725S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0805S00",
@@ -444,7 +487,8 @@
         "type": "各駅停車",
         "train_number": "B805S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0761S00",
@@ -454,7 +498,8 @@
         "type": "各駅停車",
         "train_number": "B761S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0827K00",
@@ -464,7 +509,8 @@
         "type": "各駅停車",
         "train_number": "B827K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0817K00",
@@ -474,7 +520,8 @@
         "type": "各駅停車",
         "train_number": "B817K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0841S00",
@@ -484,7 +531,8 @@
         "type": "各駅停車",
         "train_number": "B841S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0753S00",
@@ -494,7 +542,8 @@
         "type": "各駅停車",
         "train_number": "B753S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0811K00",
@@ -504,7 +553,8 @@
         "type": "各駅停車",
         "train_number": "B811K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0805K00",
@@ -514,7 +564,8 @@
         "type": "各駅停車",
         "train_number": "B805K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0815K00",
@@ -524,7 +575,8 @@
         "type": "各駅停車",
         "train_number": "B815K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0759S00",
@@ -534,7 +586,8 @@
         "type": "各駅停車",
         "train_number": "B759S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0801K00",
@@ -544,7 +597,8 @@
         "type": "各駅停車",
         "train_number": "B801K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0845S00",
@@ -554,7 +608,8 @@
         "type": "各駅停車",
         "train_number": "B845S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0827S00",
@@ -564,7 +619,8 @@
         "type": "各駅停車",
         "train_number": "B827S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0929S00",
@@ -574,7 +630,8 @@
         "type": "各駅停車",
         "train_number": "B929S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0931K00",
@@ -584,7 +641,8 @@
         "type": "各駅停車",
         "train_number": "B931K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0847S00",
@@ -594,7 +652,8 @@
         "type": "各駅停車",
         "train_number": "B847S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0901S00",
@@ -604,7 +663,8 @@
         "type": "各駅停車",
         "train_number": "B901S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0913S00",
@@ -614,7 +674,8 @@
         "type": "各駅停車",
         "train_number": "B913S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0943S00",
@@ -624,7 +685,8 @@
         "type": "各駅停車",
         "train_number": "B943S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0917S00",
@@ -634,7 +696,8 @@
         "type": "各駅停車",
         "train_number": "B917S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0909K00",
@@ -644,7 +707,8 @@
         "type": "各駅停車",
         "train_number": "B909K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0903S00",
@@ -654,7 +718,8 @@
         "type": "各駅停車",
         "train_number": "B903S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0951E00",
@@ -664,7 +729,8 @@
         "type": "各駅停車",
         "train_number": "B951E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0919S00",
@@ -674,7 +740,8 @@
         "type": "各駅停車",
         "train_number": "B919S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0951S00",
@@ -684,7 +751,8 @@
         "type": "各駅停車",
         "train_number": "B951S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0965E00",
@@ -694,7 +762,8 @@
         "type": "各駅停車",
         "train_number": "B965E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0915S00",
@@ -704,7 +773,8 @@
         "type": "各駅停車",
         "train_number": "B915S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0911S00",
@@ -714,7 +784,8 @@
         "type": "各駅停車",
         "train_number": "B911S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0929K00",
@@ -724,7 +795,8 @@
         "type": "各駅停車",
         "train_number": "B929K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0913K00",
@@ -734,7 +806,8 @@
         "type": "各駅停車",
         "train_number": "B913K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0921S00",
@@ -744,7 +817,8 @@
         "type": "各駅停車",
         "train_number": "B921S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1005S00",
@@ -754,7 +828,8 @@
         "type": "各駅停車",
         "train_number": "B1005S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1021K00",
@@ -764,7 +839,8 @@
         "type": "各駅停車",
         "train_number": "B1021K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0937S00",
@@ -774,7 +850,8 @@
         "type": "各駅停車",
         "train_number": "B937S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1039S00",
@@ -784,7 +861,8 @@
         "type": "各駅停車",
         "train_number": "B1039S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B0953E00",
@@ -794,7 +872,8 @@
         "type": "各駅停車",
         "train_number": "B953E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1033S00",
@@ -804,7 +883,8 @@
         "type": "各駅停車",
         "train_number": "B1033S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1005K00",
@@ -814,7 +894,8 @@
         "type": "各駅停車",
         "train_number": "B1005K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1057E00",
@@ -824,7 +905,8 @@
         "type": "各駅停車",
         "train_number": "B1057E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1055S00",
@@ -834,7 +916,8 @@
         "type": "各駅停車",
         "train_number": "B1055S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1007K00",
@@ -844,7 +927,8 @@
         "type": "各駅停車",
         "train_number": "B1007K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1045E00",
@@ -854,7 +938,8 @@
         "type": "各駅停車",
         "train_number": "B1045E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1003K00",
@@ -864,7 +949,8 @@
         "type": "各駅停車",
         "train_number": "B1003K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1035S00",
@@ -874,7 +960,8 @@
         "type": "各駅停車",
         "train_number": "B1035S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1101S00",
@@ -884,7 +971,8 @@
         "type": "各駅停車",
         "train_number": "B1101S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1125S00",
@@ -894,7 +982,8 @@
         "type": "各駅停車",
         "train_number": "B1125S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1109K00",
@@ -904,7 +993,8 @@
         "type": "各駅停車",
         "train_number": "B1109K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1023K00",
@@ -914,7 +1004,8 @@
         "type": "各駅停車",
         "train_number": "B1023K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1151E00",
@@ -924,7 +1015,8 @@
         "type": "各駅停車",
         "train_number": "B1151E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1117K00",
@@ -934,7 +1026,8 @@
         "type": "各駅停車",
         "train_number": "B1117K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1113K00",
@@ -944,7 +1037,8 @@
         "type": "各駅停車",
         "train_number": "B1113K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1027K00",
@@ -954,7 +1048,8 @@
         "type": "各駅停車",
         "train_number": "B1027K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1129K00",
@@ -964,7 +1059,8 @@
         "type": "各駅停車",
         "train_number": "B1129K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1127S00",
@@ -974,7 +1070,8 @@
         "type": "各駅停車",
         "train_number": "B1127S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1105S00",
@@ -984,7 +1081,8 @@
         "type": "各駅停車",
         "train_number": "B1105S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1153S00",
@@ -994,7 +1092,8 @@
         "type": "各駅停車",
         "train_number": "B1153S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1237S00",
@@ -1004,7 +1103,8 @@
         "type": "各駅停車",
         "train_number": "B1237S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1243S00",
@@ -1014,7 +1114,8 @@
         "type": "各駅停車",
         "train_number": "B1243S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1233S00",
@@ -1024,7 +1125,8 @@
         "type": "各駅停車",
         "train_number": "B1233S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1131S00",
@@ -1034,7 +1136,8 @@
         "type": "各駅停車",
         "train_number": "B1131S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1251S00",
@@ -1044,7 +1147,8 @@
         "type": "各駅停車",
         "train_number": "B1251S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1201K00",
@@ -1054,7 +1158,8 @@
         "type": "各駅停車",
         "train_number": "B1201K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1207K00",
@@ -1064,7 +1169,8 @@
         "type": "各駅停車",
         "train_number": "B1207K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1161S00",
@@ -1074,7 +1180,8 @@
         "type": "各駅停車",
         "train_number": "B1161S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1203K00",
@@ -1084,7 +1191,8 @@
         "type": "各駅停車",
         "train_number": "B1203K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1221K00",
@@ -1094,7 +1202,8 @@
         "type": "各駅停車",
         "train_number": "B1221K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1201S00",
@@ -1104,7 +1213,8 @@
         "type": "各駅停車",
         "train_number": "B1201S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1259S00",
@@ -1114,7 +1224,8 @@
         "type": "各駅停車",
         "train_number": "B1259S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1309K00",
@@ -1124,7 +1235,8 @@
         "type": "各駅停車",
         "train_number": "B1309K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1305K00",
@@ -1134,7 +1246,8 @@
         "type": "各駅停車",
         "train_number": "B1305K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1351E00",
@@ -1144,7 +1257,8 @@
         "type": "各駅停車",
         "train_number": "B1351E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1245S00",
@@ -1154,7 +1268,8 @@
         "type": "各駅停車",
         "train_number": "B1245S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1313K00",
@@ -1164,7 +1279,8 @@
         "type": "各駅停車",
         "train_number": "B1313K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1345E00",
@@ -1174,7 +1290,8 @@
         "type": "各駅停車",
         "train_number": "B1345E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1329K00",
@@ -1184,7 +1301,8 @@
         "type": "各駅停車",
         "train_number": "B1329K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1231K00",
@@ -1194,7 +1312,8 @@
         "type": "各駅停車",
         "train_number": "B1231K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1305S00",
@@ -1204,7 +1323,8 @@
         "type": "各駅停車",
         "train_number": "B1305S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1325S00",
@@ -1214,7 +1334,8 @@
         "type": "各駅停車",
         "train_number": "B1325S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1337S00",
@@ -1224,7 +1345,8 @@
         "type": "各駅停車",
         "train_number": "B1337S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1311S00",
@@ -1234,7 +1356,8 @@
         "type": "各駅停車",
         "train_number": "B1311S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1433S00",
@@ -1244,7 +1367,8 @@
         "type": "各駅停車",
         "train_number": "B1433S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1417K00",
@@ -1254,7 +1378,8 @@
         "type": "各駅停車",
         "train_number": "B1417K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1451S00",
@@ -1264,7 +1389,8 @@
         "type": "各駅停車",
         "train_number": "B1451S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1357S00",
@@ -1274,7 +1400,8 @@
         "type": "各駅停車",
         "train_number": "B1357S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1407K00",
@@ -1284,7 +1411,8 @@
         "type": "各駅停車",
         "train_number": "B1407K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1427S00",
@@ -1294,7 +1422,8 @@
         "type": "各駅停車",
         "train_number": "B1427S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1403K00",
@@ -1304,7 +1433,8 @@
         "type": "各駅停車",
         "train_number": "B1403K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1355S00",
@@ -1314,7 +1444,8 @@
         "type": "各駅停車",
         "train_number": "B1355S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1401S00",
@@ -1324,7 +1455,8 @@
         "type": "各駅停車",
         "train_number": "B1401S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1443S00",
@@ -1334,7 +1466,8 @@
         "type": "各駅停車",
         "train_number": "B1443S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1409K00",
@@ -1344,7 +1477,8 @@
         "type": "各駅停車",
         "train_number": "B1409K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1435S00",
@@ -1354,7 +1488,8 @@
         "type": "各駅停車",
         "train_number": "B1435S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1551E00",
@@ -1364,7 +1499,8 @@
         "type": "各駅停車",
         "train_number": "B1551E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1501K00",
@@ -1374,7 +1510,8 @@
         "type": "各駅停車",
         "train_number": "B1501K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1513K00",
@@ -1384,7 +1521,8 @@
         "type": "各駅停車",
         "train_number": "B1513K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1423K00",
@@ -1394,7 +1532,8 @@
         "type": "各駅停車",
         "train_number": "B1423K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1529K00",
@@ -1404,7 +1543,8 @@
         "type": "各駅停車",
         "train_number": "B1529K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1521K00",
@@ -1414,7 +1554,8 @@
         "type": "各駅停車",
         "train_number": "B1521K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1505S00",
@@ -1424,7 +1565,8 @@
         "type": "各駅停車",
         "train_number": "B1505S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1427K00",
@@ -1434,7 +1576,8 @@
         "type": "各駅停車",
         "train_number": "B1427K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1537S00",
@@ -1444,7 +1587,8 @@
         "type": "各駅停車",
         "train_number": "B1537S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1505K00",
@@ -1454,7 +1598,8 @@
         "type": "各駅停車",
         "train_number": "B1505K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1533S00",
@@ -1464,7 +1609,8 @@
         "type": "各駅停車",
         "train_number": "B1533S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1553S00",
@@ -1474,7 +1620,8 @@
         "type": "各駅停車",
         "train_number": "B1553S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1651S00",
@@ -1484,7 +1631,8 @@
         "type": "各駅停車",
         "train_number": "B1651S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1645E00",
@@ -1494,7 +1642,8 @@
         "type": "各駅停車",
         "train_number": "B1645E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1607K00",
@@ -1504,7 +1653,8 @@
         "type": "各駅停車",
         "train_number": "B1607K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1607S00",
@@ -1514,7 +1664,8 @@
         "type": "各駅停車",
         "train_number": "B1607S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1613S00",
@@ -1524,7 +1675,8 @@
         "type": "各駅停車",
         "train_number": "B1613S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1531S00",
@@ -1534,7 +1686,8 @@
         "type": "各駅停車",
         "train_number": "B1531S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1663E00",
@@ -1544,7 +1697,8 @@
         "type": "各駅停車",
         "train_number": "B1663E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1601S00",
@@ -1554,7 +1708,8 @@
         "type": "各駅停車",
         "train_number": "B1601S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1661E00",
@@ -1564,7 +1719,8 @@
         "type": "各駅停車",
         "train_number": "B1661E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1611S00",
@@ -1574,7 +1730,8 @@
         "type": "各駅停車",
         "train_number": "B1611S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1661S00",
@@ -1584,7 +1741,8 @@
         "type": "各駅停車",
         "train_number": "B1661S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1623S00",
@@ -1594,7 +1752,8 @@
         "type": "各駅停車",
         "train_number": "B1623S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1617K00",
@@ -1604,7 +1763,8 @@
         "type": "各駅停車",
         "train_number": "B1617K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1651E00",
@@ -1614,7 +1774,8 @@
         "type": "各駅停車",
         "train_number": "B1651E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1613K00",
@@ -1624,7 +1785,8 @@
         "type": "各駅停車",
         "train_number": "B1613K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1653E00",
@@ -1634,7 +1796,8 @@
         "type": "各駅停車",
         "train_number": "B1653E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1727S00",
@@ -1644,7 +1807,8 @@
         "type": "各駅停車",
         "train_number": "B1727S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1715K00",
@@ -1654,7 +1818,8 @@
         "type": "各駅停車",
         "train_number": "B1715K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1631K00",
@@ -1664,7 +1829,8 @@
         "type": "各駅停車",
         "train_number": "B1631K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1743E00",
@@ -1674,7 +1840,8 @@
         "type": "各駅停車",
         "train_number": "B1743E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1755S00",
@@ -1684,7 +1851,8 @@
         "type": "各駅停車",
         "train_number": "B1755S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1705S00",
@@ -1694,7 +1862,8 @@
         "type": "各駅停車",
         "train_number": "B1705S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1703K00",
@@ -1704,7 +1873,8 @@
         "type": "各駅停車",
         "train_number": "B1703K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1737S00",
@@ -1714,7 +1884,8 @@
         "type": "各駅停車",
         "train_number": "B1737S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1747E00",
@@ -1724,7 +1895,8 @@
         "type": "各駅停車",
         "train_number": "B1747E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1709K00",
@@ -1734,7 +1906,8 @@
         "type": "各駅停車",
         "train_number": "B1709K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1733S00",
@@ -1744,7 +1917,8 @@
         "type": "各駅停車",
         "train_number": "B1733S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1749S00",
@@ -1754,7 +1928,8 @@
         "type": "各駅停車",
         "train_number": "B1749S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1719K00",
@@ -1764,7 +1939,8 @@
         "type": "各駅停車",
         "train_number": "B1719K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1751S00",
@@ -1774,7 +1950,8 @@
         "type": "各駅停車",
         "train_number": "B1751S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1725S00",
@@ -1784,7 +1961,8 @@
         "type": "各駅停車",
         "train_number": "B1725S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1707S00",
@@ -1794,7 +1972,8 @@
         "type": "各駅停車",
         "train_number": "B1707S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1745S00",
@@ -1804,7 +1983,8 @@
         "type": "各駅停車",
         "train_number": "B1745S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1831S00",
@@ -1814,7 +1994,8 @@
         "type": "各駅停車",
         "train_number": "B1831S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1729K00",
@@ -1824,7 +2005,8 @@
         "type": "各駅停車",
         "train_number": "B1729K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1839S00",
@@ -1834,7 +2016,8 @@
         "type": "各駅停車",
         "train_number": "B1839S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1759S00",
@@ -1844,7 +2027,8 @@
         "type": "各駅停車",
         "train_number": "B1759S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1861E00",
@@ -1854,7 +2038,8 @@
         "type": "各駅停車",
         "train_number": "B1861E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1847S00",
@@ -1864,7 +2049,8 @@
         "type": "各駅停車",
         "train_number": "B1847S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1849E00",
@@ -1874,7 +2060,8 @@
         "type": "各駅停車",
         "train_number": "B1849E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1827K00",
@@ -1884,7 +2071,8 @@
         "type": "各駅停車",
         "train_number": "B1827K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1805K00",
@@ -1894,7 +2082,8 @@
         "type": "各駅停車",
         "train_number": "B1805K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1809S00",
@@ -1904,7 +2093,8 @@
         "type": "各駅停車",
         "train_number": "B1809S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1835S00",
@@ -1914,7 +2104,8 @@
         "type": "各駅停車",
         "train_number": "B1835S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1853S00",
@@ -1924,7 +2115,8 @@
         "type": "各駅停車",
         "train_number": "B1853S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1857S00",
@@ -1934,7 +2126,8 @@
         "type": "各駅停車",
         "train_number": "B1857S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1841S00",
@@ -1944,7 +2137,8 @@
         "type": "各駅停車",
         "train_number": "B1841S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1821S00",
@@ -1954,7 +2148,8 @@
         "type": "各駅停車",
         "train_number": "B1821S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1913S00",
@@ -1964,7 +2159,8 @@
         "type": "各駅停車",
         "train_number": "B1913S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1915S00",
@@ -1974,7 +2170,8 @@
         "type": "各駅停車",
         "train_number": "B1915S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1843S00",
@@ -1984,7 +2181,8 @@
         "type": "各駅停車",
         "train_number": "B1843S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1901S00",
@@ -1994,7 +2192,8 @@
         "type": "各駅停車",
         "train_number": "B1901S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1823K00",
@@ -2004,7 +2203,8 @@
         "type": "各駅停車",
         "train_number": "B1823K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1911S00",
@@ -2014,7 +2214,8 @@
         "type": "各駅停車",
         "train_number": "B1911S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1803S00",
@@ -2024,7 +2225,8 @@
         "type": "各駅停車",
         "train_number": "B1803S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1929S00",
@@ -2034,7 +2236,8 @@
         "type": "各駅停車",
         "train_number": "B1929S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1961S00",
@@ -2044,7 +2247,8 @@
         "type": "各駅停車",
         "train_number": "B1961S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1917K00",
@@ -2054,7 +2258,8 @@
         "type": "各駅停車",
         "train_number": "B1917K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1923S00",
@@ -2064,7 +2269,8 @@
         "type": "各駅停車",
         "train_number": "B1923S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1953E00",
@@ -2074,7 +2280,8 @@
         "type": "各駅停車",
         "train_number": "B1953E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1907K00",
@@ -2084,7 +2291,8 @@
         "type": "各駅停車",
         "train_number": "B1907K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2017S00",
@@ -2094,7 +2302,8 @@
         "type": "各駅停車",
         "train_number": "B2017S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1901K00",
@@ -2104,7 +2313,8 @@
         "type": "各駅停車",
         "train_number": "B1901K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2055S00",
@@ -2114,7 +2324,8 @@
         "type": "各駅停車",
         "train_number": "B2055S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1943E00",
@@ -2124,7 +2335,8 @@
         "type": "各駅停車",
         "train_number": "B1943E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2047E00",
@@ -2134,7 +2346,8 @@
         "type": "各駅停車",
         "train_number": "B2047E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2031K00",
@@ -2144,7 +2357,8 @@
         "type": "各駅停車",
         "train_number": "B2031K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B1921K00",
@@ -2154,7 +2368,8 @@
         "type": "各駅停車",
         "train_number": "B1921K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2005S00",
@@ -2164,7 +2379,8 @@
         "type": "各駅停車",
         "train_number": "B2005S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2009K00",
@@ -2174,7 +2390,8 @@
         "type": "各駅停車",
         "train_number": "B2009K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2065E00",
@@ -2184,7 +2401,8 @@
         "type": "各駅停車",
         "train_number": "B2065E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2015K00",
@@ -2194,7 +2412,8 @@
         "type": "各駅停車",
         "train_number": "B2015K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2039S00",
@@ -2204,7 +2423,8 @@
         "type": "各駅停車",
         "train_number": "B2039S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2013K00",
@@ -2214,7 +2434,8 @@
         "type": "各駅停車",
         "train_number": "B2013K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2127S00",
@@ -2224,7 +2445,8 @@
         "type": "各駅停車",
         "train_number": "B2127S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2045S00",
@@ -2234,7 +2456,8 @@
         "type": "各駅停車",
         "train_number": "B2045S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2129K00",
@@ -2244,7 +2467,8 @@
         "type": "各駅停車",
         "train_number": "B2129K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2149S00",
@@ -2254,7 +2478,8 @@
         "type": "各駅停車",
         "train_number": "B2149S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2159S00",
@@ -2264,7 +2489,8 @@
         "type": "各駅停車",
         "train_number": "B2159S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2003K00",
@@ -2274,7 +2500,8 @@
         "type": "各駅停車",
         "train_number": "B2003K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2157E00",
@@ -2284,7 +2511,8 @@
         "type": "各駅停車",
         "train_number": "B2157E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2113S00",
@@ -2294,7 +2522,8 @@
         "type": "各駅停車",
         "train_number": "B2113S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2133S00",
@@ -2304,7 +2533,8 @@
         "type": "各駅停車",
         "train_number": "B2133S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2121S00",
@@ -2314,7 +2544,8 @@
         "type": "各駅停車",
         "train_number": "B2121S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2125S00",
@@ -2324,7 +2555,8 @@
         "type": "各駅停車",
         "train_number": "B2125S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2255S00",
@@ -2334,7 +2566,8 @@
         "type": "各駅停車",
         "train_number": "B2255S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2201S00",
@@ -2344,7 +2577,8 @@
         "type": "各駅停車",
         "train_number": "B2201S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2211S00",
@@ -2354,7 +2588,8 @@
         "type": "各駅停車",
         "train_number": "B2211S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2119K00",
@@ -2364,7 +2599,8 @@
         "type": "各駅停車",
         "train_number": "B2119K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2203S00",
@@ -2374,7 +2610,8 @@
         "type": "各駅停車",
         "train_number": "B2203S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2261S00",
@@ -2384,7 +2621,8 @@
         "type": "各駅停車",
         "train_number": "B2261S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2209K00",
@@ -2394,7 +2632,8 @@
         "type": "各駅停車",
         "train_number": "B2209K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2253S00",
@@ -2404,7 +2643,8 @@
         "type": "各駅停車",
         "train_number": "B2253S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2217S00",
@@ -2414,7 +2654,8 @@
         "type": "各駅停車",
         "train_number": "B2217S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2205K00",
@@ -2424,7 +2665,8 @@
         "type": "各駅停車",
         "train_number": "B2205K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2239S00",
@@ -2434,7 +2676,8 @@
         "type": "各駅停車",
         "train_number": "B2239S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2301K00",
@@ -2444,7 +2687,8 @@
         "type": "各駅停車",
         "train_number": "B2301K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2331K00",
@@ -2454,7 +2698,8 @@
         "type": "各駅停車",
         "train_number": "B2331K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2303K00",
@@ -2464,7 +2709,8 @@
         "type": "各駅停車",
         "train_number": "B2303K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2305S00",
@@ -2474,7 +2720,8 @@
         "type": "各駅停車",
         "train_number": "B2305S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2365E00",
@@ -2484,7 +2731,8 @@
         "type": "各駅停車",
         "train_number": "B2365E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2315K00",
@@ -2494,7 +2742,8 @@
         "type": "各駅停車",
         "train_number": "B2315K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2321K00",
@@ -2504,7 +2753,8 @@
         "type": "各駅停車",
         "train_number": "B2321K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2345S00",
@@ -2514,7 +2764,8 @@
         "type": "各駅停車",
         "train_number": "B2345S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "50B2429K00",
@@ -2524,7 +2775,8 @@
         "type": "各駅停車",
         "train_number": "B2429K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       }
     ],
     "holiday": [
@@ -2536,7 +2788,8 @@
         "type": "各駅停車",
         "train_number": "B529S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0517S00",
@@ -2546,7 +2799,8 @@
         "type": "各駅停車",
         "train_number": "B517S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0519S00",
@@ -2556,7 +2810,8 @@
         "type": "各駅停車",
         "train_number": "B519S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0521S00",
@@ -2566,7 +2821,8 @@
         "type": "各駅停車",
         "train_number": "B521S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0515K00",
@@ -2576,7 +2832,8 @@
         "type": "各駅停車",
         "train_number": "B515K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0523S00",
@@ -2586,7 +2843,8 @@
         "type": "各駅停車",
         "train_number": "B523S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0609K00",
@@ -2596,7 +2854,8 @@
         "type": "各駅停車",
         "train_number": "B609K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0641E00",
@@ -2606,7 +2865,8 @@
         "type": "各駅停車",
         "train_number": "B641E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0601S00",
@@ -2616,7 +2876,8 @@
         "type": "各駅停車",
         "train_number": "B601S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0617K00",
@@ -2626,7 +2887,8 @@
         "type": "各駅停車",
         "train_number": "B617K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0537S00",
@@ -2636,7 +2898,8 @@
         "type": "各駅停車",
         "train_number": "B537S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0605K00",
@@ -2646,7 +2909,8 @@
         "type": "各駅停車",
         "train_number": "B605K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0603K00",
@@ -2656,7 +2920,8 @@
         "type": "各駅停車",
         "train_number": "B603K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0639S00",
@@ -2666,7 +2931,8 @@
         "type": "各駅停車",
         "train_number": "B639S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0719K00",
@@ -2676,7 +2942,8 @@
         "type": "各駅停車",
         "train_number": "B719K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0701K00",
@@ -2686,7 +2953,8 @@
         "type": "各駅停車",
         "train_number": "B701K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0649E00",
@@ -2696,7 +2964,8 @@
         "type": "各駅停車",
         "train_number": "B649E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0713S00",
@@ -2706,7 +2975,8 @@
         "type": "各駅停車",
         "train_number": "B713S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0721K00",
@@ -2716,7 +2986,8 @@
         "type": "各駅停車",
         "train_number": "B721K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0641S00",
@@ -2726,7 +2997,8 @@
         "type": "各駅停車",
         "train_number": "B641S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0725S00",
@@ -2736,7 +3008,8 @@
         "type": "各駅停車",
         "train_number": "B725S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0723K00",
@@ -2746,7 +3019,8 @@
         "type": "各駅停車",
         "train_number": "B723K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0733S00",
@@ -2756,7 +3030,8 @@
         "type": "各駅停車",
         "train_number": "B733S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0645E00",
@@ -2766,7 +3041,8 @@
         "type": "各駅停車",
         "train_number": "B645E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0817S00",
@@ -2776,7 +3052,8 @@
         "type": "各駅停車",
         "train_number": "B817S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0831S00",
@@ -2786,7 +3063,8 @@
         "type": "各駅停車",
         "train_number": "B831S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0819S00",
@@ -2796,7 +3074,8 @@
         "type": "各駅停車",
         "train_number": "B819S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0829S00",
@@ -2806,7 +3085,8 @@
         "type": "各駅停車",
         "train_number": "B829S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0811K00",
@@ -2816,7 +3096,8 @@
         "type": "各駅停車",
         "train_number": "B811K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0815K00",
@@ -2826,7 +3107,8 @@
         "type": "各駅停車",
         "train_number": "B815K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0825K00",
@@ -2836,7 +3118,8 @@
         "type": "各駅停車",
         "train_number": "B825K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0743S00",
@@ -2846,7 +3129,8 @@
         "type": "各駅停車",
         "train_number": "B743S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0823S00",
@@ -2856,7 +3140,8 @@
         "type": "各駅停車",
         "train_number": "B823S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0809K00",
@@ -2866,7 +3151,8 @@
         "type": "各駅停車",
         "train_number": "B809K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0827S00",
@@ -2876,7 +3162,8 @@
         "type": "各駅停車",
         "train_number": "B827S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0821S00",
@@ -2886,7 +3173,8 @@
         "type": "各駅停車",
         "train_number": "B821S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0915S00",
@@ -2896,7 +3184,8 @@
         "type": "各駅停車",
         "train_number": "B915S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0917K00",
@@ -2906,7 +3195,8 @@
         "type": "各駅停車",
         "train_number": "B917K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0927K00",
@@ -2916,7 +3206,8 @@
         "type": "各駅停車",
         "train_number": "B927K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0905K00",
@@ -2926,7 +3217,8 @@
         "type": "各駅停車",
         "train_number": "B905K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0937S00",
@@ -2936,7 +3228,8 @@
         "type": "各駅停車",
         "train_number": "B937S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0903K00",
@@ -2946,7 +3239,8 @@
         "type": "各駅停車",
         "train_number": "B903K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0921K00",
@@ -2956,7 +3250,8 @@
         "type": "各駅停車",
         "train_number": "B921K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0861E00",
@@ -2966,7 +3261,8 @@
         "type": "各駅停車",
         "train_number": "B861E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0939S00",
@@ -2976,7 +3272,8 @@
         "type": "各駅停車",
         "train_number": "B939S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0919K00",
@@ -2986,7 +3283,8 @@
         "type": "各駅停車",
         "train_number": "B919K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0929K00",
@@ -2996,7 +3294,8 @@
         "type": "各駅停車",
         "train_number": "B929K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0813K00",
@@ -3006,7 +3305,8 @@
         "type": "各駅停車",
         "train_number": "B813K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1019S00",
@@ -3016,7 +3316,8 @@
         "type": "各駅停車",
         "train_number": "B1019S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B0935S00",
@@ -3026,7 +3327,8 @@
         "type": "各駅停車",
         "train_number": "B935S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1011K00",
@@ -3036,7 +3338,8 @@
         "type": "各駅停車",
         "train_number": "B1011K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1001S00",
@@ -3046,7 +3349,8 @@
         "type": "各駅停車",
         "train_number": "B1001S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1041S00",
@@ -3056,7 +3360,8 @@
         "type": "各駅停車",
         "train_number": "B1041S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1043S00",
@@ -3066,7 +3371,8 @@
         "type": "各駅停車",
         "train_number": "B1043S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1025S00",
@@ -3076,7 +3382,8 @@
         "type": "各駅停車",
         "train_number": "B1025S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1023K00",
@@ -3086,7 +3393,8 @@
         "type": "各駅停車",
         "train_number": "B1023K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1003S00",
@@ -3096,7 +3404,8 @@
         "type": "各駅停車",
         "train_number": "B1003S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1045E00",
@@ -3106,7 +3415,8 @@
         "type": "各駅停車",
         "train_number": "B1045E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1015S00",
@@ -3116,7 +3426,8 @@
         "type": "各駅停車",
         "train_number": "B1015S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1001K00",
@@ -3126,7 +3437,8 @@
         "type": "各駅停車",
         "train_number": "B1001K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1129S00",
@@ -3136,7 +3448,8 @@
         "type": "各駅停車",
         "train_number": "B1129S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1115K00",
@@ -3146,7 +3459,8 @@
         "type": "各駅停車",
         "train_number": "B1115K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1105K00",
@@ -3156,7 +3470,8 @@
         "type": "各駅停車",
         "train_number": "B1105K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1013S00",
@@ -3166,7 +3481,8 @@
         "type": "各駅停車",
         "train_number": "B1013S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1125K00",
@@ -3176,7 +3492,8 @@
         "type": "各駅停車",
         "train_number": "B1125K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1121K00",
@@ -3186,7 +3503,8 @@
         "type": "各駅停車",
         "train_number": "B1121K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1123S00",
@@ -3196,7 +3514,8 @@
         "type": "各駅停車",
         "train_number": "B1123S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1133S00",
@@ -3206,7 +3525,8 @@
         "type": "各駅停車",
         "train_number": "B1133S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1127S00",
@@ -3216,7 +3536,8 @@
         "type": "各駅停車",
         "train_number": "B1127S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1121S00",
@@ -3226,7 +3547,8 @@
         "type": "各駅停車",
         "train_number": "B1121S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1119S00",
@@ -3236,7 +3558,8 @@
         "type": "各駅停車",
         "train_number": "B1119S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1131S00",
@@ -3246,7 +3569,8 @@
         "type": "各駅停車",
         "train_number": "B1131S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1207S00",
@@ -3256,7 +3580,8 @@
         "type": "各駅停車",
         "train_number": "B1207S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1237S00",
@@ -3266,7 +3591,8 @@
         "type": "各駅停車",
         "train_number": "B1237S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1241S00",
@@ -3276,7 +3602,8 @@
         "type": "各駅停車",
         "train_number": "B1241S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1149E00",
@@ -3286,7 +3613,8 @@
         "type": "各駅停車",
         "train_number": "B1149E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1211K00",
@@ -3296,7 +3624,8 @@
         "type": "各駅停車",
         "train_number": "B1211K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1239S00",
@@ -3306,7 +3635,8 @@
         "type": "各駅停車",
         "train_number": "B1239S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1203S00",
@@ -3316,7 +3646,8 @@
         "type": "各駅停車",
         "train_number": "B1203S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1163E00",
@@ -3326,7 +3657,8 @@
         "type": "各駅停車",
         "train_number": "B1163E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1215S00",
@@ -3336,7 +3668,8 @@
         "type": "各駅停車",
         "train_number": "B1215S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1235S00",
@@ -3346,7 +3679,8 @@
         "type": "各駅停車",
         "train_number": "B1235S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1229S00",
@@ -3356,7 +3690,8 @@
         "type": "各駅停車",
         "train_number": "B1229S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1205S00",
@@ -3366,7 +3701,8 @@
         "type": "各駅停車",
         "train_number": "B1205S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1305K00",
@@ -3376,7 +3712,8 @@
         "type": "各駅停車",
         "train_number": "B1305K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1325K00",
@@ -3386,7 +3723,8 @@
         "type": "各駅停車",
         "train_number": "B1325K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1343S00",
@@ -3396,7 +3734,8 @@
         "type": "各駅停車",
         "train_number": "B1343S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1227K00",
@@ -3406,7 +3745,8 @@
         "type": "各駅停車",
         "train_number": "B1227K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1323S00",
@@ -3416,7 +3756,8 @@
         "type": "各駅停車",
         "train_number": "B1323S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1345E00",
@@ -3426,7 +3767,8 @@
         "type": "各駅停車",
         "train_number": "B1345E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1327S00",
@@ -3436,7 +3778,8 @@
         "type": "各駅停車",
         "train_number": "B1327S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1203K00",
@@ -3446,7 +3789,8 @@
         "type": "各駅停車",
         "train_number": "B1203K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1319S00",
@@ -3456,7 +3800,8 @@
         "type": "各駅停車",
         "train_number": "B1319S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1315K00",
@@ -3466,7 +3811,8 @@
         "type": "各駅停車",
         "train_number": "B1315K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1307S00",
@@ -3476,7 +3822,8 @@
         "type": "各駅停車",
         "train_number": "B1307S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1313K00",
@@ -3486,7 +3833,8 @@
         "type": "各駅停車",
         "train_number": "B1313K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1441S00",
@@ -3496,7 +3844,8 @@
         "type": "各駅停車",
         "train_number": "B1441S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1421K00",
@@ -3506,7 +3855,8 @@
         "type": "各駅停車",
         "train_number": "B1421K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1411K00",
@@ -3516,7 +3866,8 @@
         "type": "各駅停車",
         "train_number": "B1411K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1329K00",
@@ -3526,7 +3877,8 @@
         "type": "各駅停車",
         "train_number": "B1329K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1403S00",
@@ -3536,7 +3888,8 @@
         "type": "各駅停車",
         "train_number": "B1403S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1421S00",
@@ -3546,7 +3899,8 @@
         "type": "各駅停車",
         "train_number": "B1421S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1415S00",
@@ -3556,7 +3910,8 @@
         "type": "各駅停車",
         "train_number": "B1415S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1323K00",
@@ -3566,7 +3921,8 @@
         "type": "各駅停車",
         "train_number": "B1323K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1429S00",
@@ -3576,7 +3932,8 @@
         "type": "各駅停車",
         "train_number": "B1429S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1437S00",
@@ -3586,7 +3943,8 @@
         "type": "各駅停車",
         "train_number": "B1437S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1405K00",
@@ -3596,7 +3954,8 @@
         "type": "各駅停車",
         "train_number": "B1405K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1401S00",
@@ -3606,7 +3965,8 @@
         "type": "各駅停車",
         "train_number": "B1401S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1543S00",
@@ -3616,7 +3976,8 @@
         "type": "各駅停車",
         "train_number": "B1543S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1539S00",
@@ -3626,7 +3987,8 @@
         "type": "各駅停車",
         "train_number": "B1539S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1523S00",
@@ -3636,7 +3998,8 @@
         "type": "各駅停車",
         "train_number": "B1523S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1401K00",
@@ -3646,7 +4009,8 @@
         "type": "各駅停車",
         "train_number": "B1401K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1527S00",
@@ -3656,7 +4020,8 @@
         "type": "各駅停車",
         "train_number": "B1527S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1535S00",
@@ -3666,7 +4031,8 @@
         "type": "各駅停車",
         "train_number": "B1535S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1519S00",
@@ -3676,7 +4042,8 @@
         "type": "各駅停車",
         "train_number": "B1519S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1433S00",
@@ -3686,7 +4053,8 @@
         "type": "各駅停車",
         "train_number": "B1433S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1507S00",
@@ -3696,7 +4064,8 @@
         "type": "各駅停車",
         "train_number": "B1507S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1525K00",
@@ -3706,7 +4075,8 @@
         "type": "各駅停車",
         "train_number": "B1525K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1541S00",
@@ -3716,7 +4086,8 @@
         "type": "各駅停車",
         "train_number": "B1541S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1531S00",
@@ -3726,7 +4097,8 @@
         "type": "各駅停車",
         "train_number": "B1531S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1611K00",
@@ -3736,7 +4108,8 @@
         "type": "各駅停車",
         "train_number": "B1611K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1617K00",
@@ -3746,7 +4119,8 @@
         "type": "各駅停車",
         "train_number": "B1617K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1603S00",
@@ -3756,7 +4130,8 @@
         "type": "各駅停車",
         "train_number": "B1603S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1549E00",
@@ -3766,7 +4141,8 @@
         "type": "各駅停車",
         "train_number": "B1549E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1615S00",
@@ -3776,7 +4152,8 @@
         "type": "各駅停車",
         "train_number": "B1615S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1615K00",
@@ -3786,7 +4163,8 @@
         "type": "各駅停車",
         "train_number": "B1615K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1629S00",
@@ -3796,7 +4174,8 @@
         "type": "各駅停車",
         "train_number": "B1629S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1563E00",
@@ -3806,7 +4185,8 @@
         "type": "各駅停車",
         "train_number": "B1563E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1605K00",
@@ -3816,7 +4196,8 @@
         "type": "各駅停車",
         "train_number": "B1605K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1621K00",
@@ -3826,7 +4207,8 @@
         "type": "各駅停車",
         "train_number": "B1621K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1643S00",
@@ -3836,7 +4218,8 @@
         "type": "各駅停車",
         "train_number": "B1643S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1605S00",
@@ -3846,7 +4229,8 @@
         "type": "各駅停車",
         "train_number": "B1605S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1709S00",
@@ -3856,7 +4240,8 @@
         "type": "各駅停車",
         "train_number": "B1709S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1721S00",
@@ -3866,7 +4251,8 @@
         "type": "各駅停車",
         "train_number": "B1721S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1727S00",
@@ -3876,7 +4262,8 @@
         "type": "各駅停車",
         "train_number": "B1727S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1627K00",
@@ -3886,7 +4273,8 @@
         "type": "各駅停車",
         "train_number": "B1627K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1719S00",
@@ -3896,7 +4284,8 @@
         "type": "各駅停車",
         "train_number": "B1719S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1737S00",
@@ -3906,7 +4295,8 @@
         "type": "各駅停車",
         "train_number": "B1737S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1707S00",
@@ -3916,7 +4306,8 @@
         "type": "各駅停車",
         "train_number": "B1707S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1713K00",
@@ -3926,7 +4317,8 @@
         "type": "各駅停車",
         "train_number": "B1713K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1741S00",
@@ -3936,7 +4328,8 @@
         "type": "各駅停車",
         "train_number": "B1741S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1739S00",
@@ -3946,7 +4339,8 @@
         "type": "各駅停車",
         "train_number": "B1739S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1711K00",
@@ -3956,7 +4350,8 @@
         "type": "各駅停車",
         "train_number": "B1711K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1729K00",
@@ -3966,7 +4361,8 @@
         "type": "各駅停車",
         "train_number": "B1729K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1803S00",
@@ -3976,7 +4372,8 @@
         "type": "各駅停車",
         "train_number": "B1803S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1835S00",
@@ -3986,7 +4383,8 @@
         "type": "各駅停車",
         "train_number": "B1835S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1815S00",
@@ -3996,7 +4394,8 @@
         "type": "各駅停車",
         "train_number": "B1815S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1723K00",
@@ -4006,7 +4405,8 @@
         "type": "各駅停車",
         "train_number": "B1723K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1829S00",
@@ -4016,7 +4416,8 @@
         "type": "各駅停車",
         "train_number": "B1829S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1825K00",
@@ -4026,7 +4427,8 @@
         "type": "各駅停車",
         "train_number": "B1825K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1801S00",
@@ -4036,7 +4438,8 @@
         "type": "各駅停車",
         "train_number": "B1801S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1831S00",
@@ -4046,7 +4449,8 @@
         "type": "各駅停車",
         "train_number": "B1831S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1843S00",
@@ -4056,7 +4460,8 @@
         "type": "各駅停車",
         "train_number": "B1843S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1817K00",
@@ -4066,7 +4471,8 @@
         "type": "各駅停車",
         "train_number": "B1817K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1813S00",
@@ -4076,7 +4482,8 @@
         "type": "各駅停車",
         "train_number": "B1813S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1949E00",
@@ -4086,7 +4493,8 @@
         "type": "各駅停車",
         "train_number": "B1949E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1859E00",
@@ -4096,7 +4504,8 @@
         "type": "各駅停車",
         "train_number": "B1859E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1915K00",
@@ -4106,7 +4515,8 @@
         "type": "各駅停車",
         "train_number": "B1915K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1963E00",
@@ -4116,7 +4526,8 @@
         "type": "各駅停車",
         "train_number": "B1963E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1933S00",
@@ -4126,7 +4537,8 @@
         "type": "各駅停車",
         "train_number": "B1933S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1921K00",
@@ -4136,7 +4548,8 @@
         "type": "各駅停車",
         "train_number": "B1921K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1905K00",
@@ -4146,7 +4559,8 @@
         "type": "各駅停車",
         "train_number": "B1905K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1905S00",
@@ -4156,7 +4570,8 @@
         "type": "各駅停車",
         "train_number": "B1905S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1911K00",
@@ -4166,7 +4581,8 @@
         "type": "各駅停車",
         "train_number": "B1911K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1903K00",
@@ -4176,7 +4592,8 @@
         "type": "各駅停車",
         "train_number": "B1903K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2027K00",
@@ -4186,7 +4603,8 @@
         "type": "各駅停車",
         "train_number": "B2027K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2037S00",
@@ -4196,7 +4614,8 @@
         "type": "各駅停車",
         "train_number": "B2037S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2029S00",
@@ -4206,7 +4625,8 @@
         "type": "各駅停車",
         "train_number": "B2029S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2041S00",
@@ -4216,7 +4636,8 @@
         "type": "各駅停車",
         "train_number": "B2041S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2011S00",
@@ -4226,7 +4647,8 @@
         "type": "各駅停車",
         "train_number": "B2011S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2039S00",
@@ -4236,7 +4658,8 @@
         "type": "各駅停車",
         "train_number": "B2039S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B1919S00",
@@ -4246,7 +4669,8 @@
         "type": "各駅停車",
         "train_number": "B1919S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2029K00",
@@ -4256,7 +4680,8 @@
         "type": "各駅停車",
         "train_number": "B2029K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2017K00",
@@ -4266,7 +4691,8 @@
         "type": "各駅停車",
         "train_number": "B2017K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2035S00",
@@ -4276,7 +4702,8 @@
         "type": "各駅停車",
         "train_number": "B2035S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2123K00",
@@ -4286,7 +4713,8 @@
         "type": "各駅停車",
         "train_number": "B2123K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2013K00",
@@ -4296,7 +4724,8 @@
         "type": "各駅停車",
         "train_number": "B2013K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2115K00",
@@ -4306,7 +4735,8 @@
         "type": "各駅停車",
         "train_number": "B2115K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2131S00",
@@ -4316,7 +4746,8 @@
         "type": "各駅停車",
         "train_number": "B2131S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2125K00",
@@ -4326,7 +4757,8 @@
         "type": "各駅停車",
         "train_number": "B2125K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2101S00",
@@ -4336,7 +4768,8 @@
         "type": "各駅停車",
         "train_number": "B2101S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2101K00",
@@ -4346,7 +4779,8 @@
         "type": "各駅停車",
         "train_number": "B2101K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2053E00",
@@ -4356,7 +4790,8 @@
         "type": "各駅停車",
         "train_number": "B2053E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2113S00",
@@ -4366,7 +4801,8 @@
         "type": "各駅停車",
         "train_number": "B2113S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2121S00",
@@ -4376,7 +4812,8 @@
         "type": "各駅停車",
         "train_number": "B2121S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2263E00",
@@ -4386,7 +4823,8 @@
         "type": "各駅停車",
         "train_number": "B2263E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2133S00",
@@ -4396,7 +4834,8 @@
         "type": "各駅停車",
         "train_number": "B2133S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2223S00",
@@ -4406,7 +4845,8 @@
         "type": "各駅停車",
         "train_number": "B2223S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2211K00",
@@ -4416,7 +4856,8 @@
         "type": "各駅停車",
         "train_number": "B2211K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2227S00",
@@ -4426,7 +4867,8 @@
         "type": "各駅停車",
         "train_number": "B2227S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2227K00",
@@ -4436,7 +4878,8 @@
         "type": "各駅停車",
         "train_number": "B2227K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2229S00",
@@ -4446,7 +4889,8 @@
         "type": "各駅停車",
         "train_number": "B2229S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2311S00",
@@ -4456,7 +4900,8 @@
         "type": "各駅停車",
         "train_number": "B2311S",
         "operator": "S",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2365E00",
@@ -4466,7 +4911,8 @@
         "type": "各駅停車",
         "train_number": "B2365E",
         "operator": "E",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2329K00",
@@ -4476,7 +4922,8 @@
         "type": "各駅停車",
         "train_number": "B2329K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2323K00",
@@ -4486,7 +4933,8 @@
         "type": "各駅停車",
         "train_number": "B2323K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       },
       {
         "trip_id": "52B2317K00",
@@ -4496,7 +4944,8 @@
         "type": "各駅停車",
         "train_number": "B2317K",
         "operator": "K",
-        "limited_express": false
+        "limited_express": false,
+        "origin": false
       }
     ]
   }
