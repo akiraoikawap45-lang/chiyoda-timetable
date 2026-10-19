@@ -1,0 +1,53 @@
+# 時刻表データの自動更新
+#
+# 毎日、ODPTからGTFSをダウンロードして public/data/ を作り直す。
+# 変更があればコミットしてpushする → Cloudflare Pages が自動で公開し直す。
+
+name: 時刻表データの更新
+
+on:
+  schedule:
+    # 毎日 午前4時（日本時間）。cronはUTC（世界標準時）で書くため、9時間引いて前日の19時になる
+    # ※GitHubが混んでいると、数分〜数十分遅れて始まることがある
+    - cron: "0 19 * * *"
+  # GitHubの画面（Actionsタブ）から手動でも実行できるようにする
+  workflow_dispatch:
+
+# リポジトリにpushするため、書き込みの権限を与える
+permissions:
+  contents: write
+
+# 手動実行と定時実行が重なったとき、同時に動かないようにする
+concurrency:
+  group: update-timetable
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: リポジトリを取得
+        uses: actions/checkout@v5
+
+      - name: Pythonを用意
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: 時刻表JSONを作る
+        env:
+          ODPT_TOKEN: ${{ secrets.ODPT_TOKEN }}
+        run: python3 scripts/build_timetable.py
+
+      - name: 変更があればコミットしてpush
+        run: |
+          git add public/data
+          if git diff --cached --quiet; then
+            echo "データに変更はありません"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "時刻表データを更新（$(TZ=Asia/Tokyo date +%Y-%m-%d)）"
+          git push
