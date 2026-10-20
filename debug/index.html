@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTFS書き出し（デバッグ用）</title>
+<style>
+  body { font-family: sans-serif; margin: 16px; max-width: 760px; line-height: 1.5; }
+  fieldset { margin-bottom: 16px; border: 1px solid #ccc; border-radius: 6px; }
+  legend { font-weight: bold; }
+  select { font-size: 1em; padding: 4px; }
+  .dest { font-size: 0.9em; color: #444; }
+  .dir { color: #888; font-size: 0.85em; }
+  button { font-size: 1em; padding: 6px 20px; }
+  #status { margin-top: 12px; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<h1>東京メトロ GTFS書き出し（デバッグ用）</h1>
+<p id="feed">読み込み中…</p>
+
+<form id="form">
+  <fieldset>
+    <legend>路線</legend>
+    <select name="route" id="route"></select>
+  </fieldset>
+
+  <fieldset>
+    <legend>ダイヤ</legend>
+    <label><input type="radio" name="service" value="0" checked> 平日</label>
+    <label><input type="radio" name="service" value="1"> 土休日</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>方向</legend>
+    <div><label><input type="radio" name="line" value="A" checked> A線</label> <span class="dest" id="dest-A"></span></div>
+    <div><label><input type="radio" name="line" value="B"> B線</label> <span class="dest" id="dest-B"></span></div>
+    <div class="dir">trip_id の3文字目（例：50<b>B</b>0607E00）で判定。direction_id との対応は路線ごとに違います</div>
+  </fieldset>
+
+  <button type="submit">保存</button>
+</form>
+<div id="status"></div>
+
+<script>
+const routeEl = document.getElementById("route");
+const statusEl = document.getElementById("status");
+let routes = [];
+
+// 選んだ路線の、A線・B線それぞれの主な行き先を表示する
+function showDestinations() {
+  const r = routes.find(x => x.route_id === routeEl.value);
+  for (const line of ["A", "B"]) {
+    const info = r.lines[line];
+    document.getElementById("dest-" + line).innerHTML = info
+      ? `${info.headsigns.join("・")} など <span class="dir">(direction_id ${info.direction_ids.join(",")})</span>`
+      : "（便なし）";
+  }
+}
+
+fetch("/api/options").then(r => r.json()).then(opt => {
+  const f = opt.feed_info;
+  document.getElementById("feed").textContent =
+    `feed_version ${f.feed_version}（有効期間 ${f.feed_start_date}〜${f.feed_end_date}）`;
+  routes = opt.routes;
+  routeEl.innerHTML = routes.map(r =>
+    `<option value="${r.route_id}"${r.name === "千代田線" ? " selected" : ""}>${r.name}</option>`).join("");
+  routeEl.addEventListener("change", showDestinations);
+  showDestinations();
+}).catch(() => { statusEl.textContent = "選択肢を読み込めませんでした。サーバーが動いているか確認してください"; });
+
+document.getElementById("form").addEventListener("submit", async e => {
+  e.preventDefault();
+  const params = new URLSearchParams(new FormData(e.target));
+  statusEl.textContent = "書き出し中…";
+  const res = await fetch("/api/export?" + params);
+  if (!res.ok) { statusEl.textContent = await res.text(); return; }
+
+  // サーバーから届いたJSONを、ブラウザでもファイルとしてダウンロードする
+  const blob = await res.blob();
+  const name = res.headers.get("Content-Disposition").match(/filename="(.+)"/)[1];
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = name;
+  a.click();
+  URL.revokeObjectURL(a.href);
+  statusEl.textContent = `保存しました：${res.headers.get("X-Saved-Path")}（${(blob.size / 1024).toFixed(0)} KB）`;
+});
+</script>
+</body>
+</html>

@@ -21,3 +21,6 @@ node_modules/
 .DS_Store
 Thumbs.db
 .vscode/
+
+# デバッグ用のGTFS書き出し（debug/export_gtfs.py）の出力
+debug/output/
