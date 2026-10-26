@@ -337,6 +337,9 @@ button {
 }
 
 .train-sub {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin: 0 0 8px;
   color: var(--muted);
   font-size: 0.8rem;
@@ -363,9 +366,23 @@ button {
   background: var(--soft);
 }
 
-.stop-times {
-  display: flex;
-  gap: 12px;
+.train-sub .operator {
+  flex: none;
+  width: 20px;
+  height: 24px;
+}
+
+/* 千代田線内の途中駅の折りたたみ（開いた中身は左に線を引く） */
+.stop-fold {
+  border-bottom: 1px solid var(--line);
+}
+
+.stop-fold .stops {
+  border-left: 3px solid var(--line);
+}
+
+.stop-fold .stop:last-child {
+  border-bottom: 0;
 }
 
 .stop-time .time {
@@ -392,6 +409,24 @@ footer {
   padding-bottom: 24px;
   font-size: 0.8rem;
   color: var(--muted);
+}
+
+footer p {
+  margin: 0 0 4px;
+}
+
+/* 乗換路線の対象の説明と、出典の間を空ける */
+footer div.challenge {
+  margin-bottom: 16px;
+}
+
+footer .credit-title {
+  margin-top: 12px;
+}
+
+footer .credit-list {
+  margin: 0 0 8px;
+  padding-left: 1.5em;
 }
 
 footer a {

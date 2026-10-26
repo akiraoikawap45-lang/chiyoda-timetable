@@ -380,7 +380,7 @@ async function loadTrainInfo() {
 function openTransferDialog(transfers) {
   const body = el.transferDialog.querySelector(".dialog-body");
   body.textContent = "";
-  for (const t of transfers) body.append(infoBlock(t, `${t.railway}（${t.station}）`));
+  for (const t of transfers) body.append(infoBlock(t, `${t.railway}（${t.station}のりかえ）`));
   el.transferDialog.showModal();
 }
 
@@ -388,21 +388,43 @@ function openTransferDialog(transfers) {
 
 let trainDialogKey = null; // 今開いている列車。読み込み中に別の列車を開いたときに、古い結果を表示しないため
 
-// 1駅分の行。times は [["13:49", "着"], ["13:50", "発"]] のような形
-function stopRow(name, times, className = "") {
+// 1駅分の行。kind は「発」か「着」
+function stopRow(name, time, kind, className = "") {
   const li = document.createElement("li");
   li.className = `stop ${className}`;
-  const timesSpan = span("stop-times", "");
-  li.append(span("stop-name", name), timesSpan);
-  li.setTimes = (list) => {
-    timesSpan.textContent = "";
-    for (const [time, kind] of list) {
-      const s = span("stop-time", "");
-      s.append(span("time", displayTime(time)), span("kind", kind));
-      timesSpan.append(s);
-    }
+  const timeSpan = span("stop-time", "");
+  li.append(span("stop-name", name), timeSpan);
+  li.setTime = (newTime, newKind) => {
+    timeSpan.textContent = "";
+    timeSpan.append(span("time", displayTime(newTime)), span("kind", newKind));
   };
-  li.setTimes(times);
+  li.setTime(time, kind);
+  return li;
+}
+
+// 千代田線内の途中駅の折りたたみ。普段は点線と駅数だけを表示し、押すと開く
+function stopFold(rows) {
+  const li = document.createElement("li");
+  li.className = "stop-fold";
+  const toggle = document.createElement("button");
+  toggle.type = "button";
+  toggle.className = "fold-toggle";
+  const inner = document.createElement("ul");
+  inner.className = "stops";
+  inner.append(...rows);
+  li.append(toggle, inner);
+
+  let open = false;
+  const update = () => {
+    inner.hidden = !open;
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.textContent = open ? "たたむ" : `千代田線内 ${rows.length}駅`;
+  };
+  toggle.addEventListener("click", () => {
+    open = !open;
+    update();
+  });
+  update();
   return li;
 }
 
@@ -424,8 +446,11 @@ async function openTrainDialog(t) {
   body.textContent = "";
   const sub = document.createElement("p");
   sub.className = "train-sub";
-  sub.textContent = `列車番号 ${t.train_number}`
-    + (OPERATORS[t.operator] ? `・${OPERATORS[t.operator].name}の車両` : "");
+  sub.append(
+    operatorIcon(t.operator), // メイン画面と同じ車両アイコン
+    span("", `列車番号 ${t.train_number}`
+      + (OPERATORS[t.operator] ? `・${OPERATORS[t.operator].name}の車両` : "")),
+  );
   const list = document.createElement("ul");
   list.className = "stops";
   body.append(sub, list);
@@ -442,12 +467,15 @@ async function openTrainDialog(t) {
   if (trainDialogKey !== key) return;
   const stops = trips.trips[t.trip_id] || [];
   const from = Math.max(0, stops.findIndex(([code]) => code === station));
-  let lastRow = null;
-  stops.slice(from).forEach(([code, time], i, rest) => {
-    const last = i === rest.length - 1;
-    lastRow = stopRow(trips.stations[code] || code, [[time, last ? "着" : "発"]], i === 0 ? "current" : "");
-    list.append(lastRow);
-  });
+  const rows = stops.slice(from).map(([code, time], i, rest) => stopRow(
+    trips.stations[code] || code, time, i === rest.length - 1 ? "着" : "発", i === 0 ? "current" : "",
+  ));
+  // 乗車駅と千代田線内の終点（綾瀬・北綾瀬）だけを表示し、間の駅は折りたたむ
+  const lastRow = rows.length > 1 ? rows.pop() : null;
+  const firstRow = rows.shift();
+  if (firstRow) list.append(firstRow);
+  if (rows.length) list.append(stopFold(rows));
+  if (lastRow) list.append(lastRow);
 
   // 常磐線へ直通する列車は、JR常磐線内（亀有以遠）の時刻を続けて表示する
   if (t.category !== "joban" || !lastRow) return;
@@ -470,15 +498,13 @@ async function openTrainDialog(t) {
     list.append(noteRow("JR常磐線内の時刻を取得できません。"));
     return;
   }
-  // 綾瀬：千代田線のデータの時刻（到着）と、JRのデータの時刻（発車）を並べる
+  // 綾瀬は、JRのデータの発車時刻だけを表示する（千代田線のデータの時刻は到着）
   let jrStops = jr.stops;
   if (jrStops[0].station === "綾瀬") {
-    const [ayase] = jrStops;
-    lastRow.setTimes([[stops[stops.length - 1][1], "着"], [ayase.time, ayase.kind]]);
+    lastRow.setTime(jrStops[0].time, jrStops[0].kind);
     jrStops = jrStops.slice(1);
   }
-  list.append(noteRow("ここからJR常磐線（途中駅は発車時刻、終点は到着時刻）"));
-  for (const s of jrStops) list.append(stopRow(s.station, [[s.time, s.kind]]));
+  for (const s of jrStops) list.append(stopRow(s.station, s.time, s.kind));
 }
 
 async function loadStationTimetable() {
@@ -515,7 +541,9 @@ async function init() {
   el.station.value = state.station;
   buildFoldCheckboxes();
   setupDialogs();
-  if (!challengeAvailable()) document.getElementById("challenge-credit").hidden = true;
+  if (!challengeAvailable()) {
+    document.querySelectorAll(".challenge").forEach((e) => { e.hidden = true; });
+  }
 
   // 今日が平日ダイヤか土休日ダイヤかを決める
   const day = getServiceDay(new Date());

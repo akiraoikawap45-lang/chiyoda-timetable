@@ -23,10 +23,10 @@ const JOBAN_LOCAL = { id: "odpt.Railway:JR-East.JobanLocal", name: "常磐線各
 
 // 乗換路線：情報があるときだけ画面に出す
 const TRANSFER_LINES = [
-  { id: "odpt.Railway:JR-East.JobanRapid", name: "常磐線快速", station: "北千住・松戸・柏ほか" },
-  { id: "odpt.Railway:JR-East.Musashino", name: "武蔵野線", station: "新松戸" },
-  { id: "odpt.Railway:JR-East.NaritaAbikoBranch", name: "成田線", station: "我孫子" },
-  { id: "odpt.Railway:Tobu.TobuUrbanPark", name: "東武アーバンパークライン", station: "柏" },
+  { id: "odpt.Railway:JR-East.JobanRapid", name: "JR常磐快速線", station: "北千住・松戸・柏ほか" },
+  { id: "odpt.Railway:JR-East.Musashino", name: "JR武蔵野線", station: "新松戸" },
+  { id: "odpt.Railway:JR-East.NaritaAbikoBranch", name: "JR成田線", station: "我孫子" },
+  { id: "odpt.Railway:Tobu.TobuUrbanPark", name: "東武アーバンパークライン＜野田線＞", station: "柏" },
 ];
 
 // 平常時の文言。trainInformationStatus（運行状況）がなくても、本文がこれ以外なら「情報あり」とする

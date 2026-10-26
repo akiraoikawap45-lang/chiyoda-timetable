@@ -61,14 +61,21 @@
   </dialog>
 
   <footer>
-    <p>
-      出典：<a href="https://www.odpt.org/" target="_blank" rel="noopener">公共交通オープンデータセンター</a>
-      （東京メトロの時刻表データ、<a href="https://developer.odpt.org/terms" target="_blank" rel="noopener">公共交通オープンデータ基本ライセンス</a>）
+    <!-- チャレンジ用（JR東日本・東武鉄道）の部分は、ライセンスが終わったらapp.jsで隠す（class="challenge"） -->
+    <div class="challenge">
+      <p>乗換路線の運行状況は以下の路線を対象にしています</p>
+      <p>JR常磐快速線、JR武蔵野線（新松戸のりかえ）、東武アーバンパークライン＜野田線＞（柏のりかえ）、JR成田線（我孫子のりかえ）</p>
+      <p>上記以外の路線は表示していません（京成松戸線、流鉄流山線等）</p>
+    </div>
+
+    <p class="credit-title">
+      公共交通オープンデータセンター: <a href="https://ckan.odpt.org/" target="_blank" rel="noopener">https://ckan.odpt.org/</a>
     </p>
-    <!-- チャレンジのライセンスが終わったら、app.jsでこの行を隠す -->
-    <p id="challenge-credit">
-      JR東日本・東武鉄道の運行情報とJR常磐線内の時刻は、公共交通オープンデータチャレンジ2026の限定ライセンスにより、2027年3月11日まで表示しています。
-    </p>
+    <ul class="credit-list">
+      <li>東京メトロのGTFSデータ・運行情報</li>
+      <li class="challenge">JR東日本の列車時刻表・運行情報</li>
+      <li class="challenge">東武鉄道の運行情報</li>
+    </ul>
   </footer>
 
   <script src="app.js"></script>
