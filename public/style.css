@@ -11,7 +11,7 @@
   --text: #222;
   --muted: #888;
   --line: #ddd;
-  --accent: #00a650; /* 千代田線のラインカラーに近い緑 */
+  --accent: #00bb85; /* RGB(0, 187, 133) */
   --bg: #fff;
   --soft: #f4f6f5; /* 押したときなどの薄い背景 */
   --time-font: "Barlow", system-ui, sans-serif;
@@ -29,6 +29,17 @@ header {
   background: var(--accent);
   color: #fff;
   padding: 8px 16px;
+  /* 見出しを左、花の画像を右端に並べる */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.header-flower {
+  flex-shrink: 0; /* 画面が狭くても画像はつぶさない */
+  height: 32px;
+  width: auto;
 }
 
 header h1 {
