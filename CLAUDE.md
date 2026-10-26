@@ -73,6 +73,20 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 
 千代田線（`odpt.Railway:TokyoMetro.Chiyoda`）の分だけを取り出して返す。路線での絞り込みパラメータが使えるかは実データで確認すること。
 
+### チャレンジ用データ（JR東日本・東武鉄道）
+
+公共交通オープンデータチャレンジ用のトークン（`ODPT_CHALLENGE_TOKEN`）で取得する。**限定ライセンスは2027-03-12に終了**するため、Workerと画面の両方で`CHALLENGE_END`（2027-03-12 00:00 JST）以降は取得・表示しない。それ以降は東京メトロのデータだけで動く。
+
+- アドレスは`https://api-challenge.odpt.org/api/v4/`（通常の`api.odpt.org`では使えない）
+- JR常磐線各駅停車の時刻表：`odpt:TrainTimetable?odpt:railway=odpt.Railway:JR-East.JobanLocal&odpt:trainNumber=1305K&odpt:calendar=odpt.Calendar:Weekday`（1本だけ取れる）
+  - 千代田線の列車番号から頭の`A`/`B`を除くとJRの列車番号になる（`B1305K` → `1305K`。直通273便すべて一致を確認）
+  - **途中駅は発車時刻のみ、終点は到着時刻のみ**（途中駅の到着時刻はデータにない）。画面では「発」「着」を書き分ける
+  - 綾瀬は、東京メトロのデータが到着、JRのデータが発車（1分差）
+- 運行情報：`odpt:TrainInformation?odpt:railway=ID1,ID2,…`（カンマ区切りで複数指定できる）。JRの`odpt:operator`は`odpt.Operator:jre-is`
+  - 常に表示：常磐線各駅停車（`JR-East.JobanLocal`）
+  - 情報があるときだけ表示（乗換路線）：常磐線快速（`JR-East.JobanRapid`）、武蔵野線（`JR-East.Musashino`）、成田線我孫子支線（`JR-East.NaritaAbikoBranch`）、東武アーバンパークライン（`Tobu.TobuUrbanPark`）。京成松戸線はデータがないので対象外
+  - 判定：`odpt:trainInformationStatus`がある（平常時はない。`お知らせ`も含める）、または本文が平常時の文言（JR「平常運転」、東武「平常どおり運転しています。」）以外
+
 ## データ加工の仕様（`scripts/build_timetable.py`）
 
 1. GTFSのzipをダウンロードする（トークンは環境変数`ODPT_TOKEN`から読む）
@@ -185,7 +199,9 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 
 - 駅は選択式（C01〜C18）。前回選んだ駅を`localStorage`に保存する（使えない環境でも動くようにする）。初回は代々木上原（C01）
 - 平日・土休日は`calendar.json`で自動判定し、手動でも切り替えられる
-- 運行情報（千代田線）を時刻表の上に表示する。時刻は「13:58 現在」の形で表示する（ODPTのデータ作成時刻）。取得できない場合は「運行情報を取得できません」と出し、時刻表は表示を続ける
+- 列車を押すと、ウインドウで乗車駅から終点までの時刻を表示する（綾瀬までは`trips.json`、亀有以遠はWorkerの`/jr-train`）
+- 乗換路線に情報があるときだけ、運行情報の下に赤で「乗換路線の運行情報があります」と表示し、押すとウインドウで内容を表示する
+- 運行情報（千代田線・常磐線各駅停車）を時刻表の上に表示する。時刻は「13:58 現在」の形で表示する（ODPTのデータ作成時刻）。取得できない場合は「運行情報を取得できません」と出し、時刻表は表示を続ける
 - 出典（公共交通オープンデータセンター）を表記する
 
 ### PWA
@@ -197,7 +213,9 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 ## Workerの仕様（`worker/`）
 
 - ODPTのトークンは`wrangler secret put ODPT_TOKEN`で登録する（コードに書かない）
-- 運行情報APIを呼び、千代田線の分だけを整形して返す
+- `GET /`：運行情報（千代田線・常磐線各駅停車・情報のある乗換路線）を整形して返す
+- `GET /jr-train?number=1305K&service=weekday`：JR常磐線内の列車の時刻を返す（6時間キャッシュ）
+- チャレンジ用のトークンは`wrangler secret put ODPT_CHALLENGE_TOKEN`で登録する
 - 60秒キャッシュする
 - CORSは公開先（Pagesのドメイン）と開発用のlocalhostのみ許可する
 
@@ -266,6 +284,4 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 
 ## 将来の拡張候補（今は作らない）
 
-- JR常磐線の運行状況の表示（JR東日本はGTFS-RTのみ提供で、常磐線は羽鳥以南が対象。「公共交通オープンデータチャレンジ限定ライセンス」の条件確認が必要）
 - 特急の通過情報の活用
-- 列車をタップして、終点までの各駅の時刻を表示する（`trips.json`を使う。JR常磐線内の時刻がないため一旦見送り）

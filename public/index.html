@@ -42,10 +42,32 @@
     <div id="timetable"></div>
   </main>
 
+  <!-- 乗換路線の運行情報（「乗換路線の運行情報があります」を押すと開く） -->
+  <dialog id="transfer-dialog" class="dialog">
+    <div class="dialog-head">
+      <h2>乗換路線の運行情報</h2>
+      <button type="button" class="dialog-close" aria-label="閉じる">×</button>
+    </div>
+    <div class="dialog-body"></div>
+  </dialog>
+
+  <!-- 列車の時刻（時刻表の列車を押すと開く） -->
+  <dialog id="train-dialog" class="dialog">
+    <div class="dialog-head">
+      <h2></h2>
+      <button type="button" class="dialog-close" aria-label="閉じる">×</button>
+    </div>
+    <div class="dialog-body"></div>
+  </dialog>
+
   <footer>
     <p>
       出典：<a href="https://www.odpt.org/" target="_blank" rel="noopener">公共交通オープンデータセンター</a>
       （東京メトロの時刻表データ、<a href="https://developer.odpt.org/terms" target="_blank" rel="noopener">公共交通オープンデータ基本ライセンス</a>）
+    </p>
+    <!-- チャレンジのライセンスが終わったら、app.jsでこの行を隠す -->
+    <p id="challenge-credit">
+      JR東日本・東武鉄道の運行情報とJR常磐線内の時刻は、公共交通オープンデータチャレンジ2026の限定ライセンスにより、2027年3月11日まで表示しています。
     </p>
   </footer>
 

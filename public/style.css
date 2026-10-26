@@ -56,13 +56,7 @@ footer {
 
 /* 運行情報 */
 #train-info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0 0.5em;
   margin: 12px 0;
-  padding: 8px 12px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
   font-size: 0.9rem;
 }
 
@@ -70,27 +64,65 @@ footer {
   display: none;
 }
 
-#train-info .label {
+/* 1路線分（運行情報の欄と、乗換路線のウインドウで使う） */
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.5em;
+  margin: 0 0 6px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.line .label {
   font-weight: bold;
   width: 100%;
 }
 
-#train-info .date {
+.line .date {
   color: var(--muted);
 }
 
-#train-info.alert {
+.line.alert {
   border-color: #d00;
   background: #fff3f3;
 }
 
-#train-info.alert .status {
+.line.alert .status {
   color: #d00;
   font-weight: bold;
 }
 
-#train-info.unavailable {
+.line .range {
+  font-weight: bold;
+}
+
+.line.unavailable {
   color: var(--muted);
+}
+
+/* 乗換路線の運行情報があるときだけ出す、赤い案内 */
+.transfer-alert {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d00;
+  border-radius: 6px;
+  background: #fff3f3;
+  color: #d00;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+}
+
+.transfer-alert::before {
+  content: "⚠ ";
+}
+
+.transfer-alert::after {
+  content: "›";
+  float: right;
 }
 
 .controls {
@@ -174,8 +206,9 @@ button {
   padding: 0;
 }
 
-/* 1便の行 */
+/* 1便の行（押すと終点までの時刻を表示する） */
 .train {
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -250,6 +283,108 @@ button {
 
 .fold .train .time {
   font-size: 1.3rem;
+}
+
+.train:active {
+  background: var(--soft);
+}
+
+/* ウインドウ（乗換路線の運行情報、列車の時刻） */
+.dialog {
+  width: min(480px, calc(100% - 32px));
+  max-height: calc(100% - 64px);
+  padding: 0; /* 外側を押したら閉じる判定のため、余白は中の要素に付ける */
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.dialog-head {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 8px 8px 16px;
+  background: var(--accent);
+  color: #fff;
+}
+
+.dialog-head h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.dialog-close {
+  flex: none;
+  border: 0;
+  background: none;
+  color: inherit;
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.dialog-body {
+  padding: 12px 16px 16px;
+  font-size: 0.9rem;
+}
+
+.train-sub {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* 列車の停車駅と時刻 */
+.stops {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+.stop.current {
+  font-weight: bold;
+  background: var(--soft);
+}
+
+.stop-times {
+  display: flex;
+  gap: 12px;
+}
+
+.stop-time .time {
+  font-family: var(--time-font);
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.stop-time .kind {
+  margin-left: 2px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.stop-note {
+  padding: 8px 4px 4px;
+  color: var(--muted);
+  font-size: 0.75rem;
 }
 
 footer {

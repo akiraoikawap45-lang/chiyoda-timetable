@@ -5,7 +5,7 @@
 // 新しいデータは、次に開いたときに反映される。
 
 // 画面のファイルの構成を変えたら、この番号を上げる（古いキャッシュが消える）
-const CACHE_NAME = "timetable-v3";
+const CACHE_NAME = "timetable-v4";
 
 const STATION_FILES = Array.from({ length: 18 }, (_, i) => `data/C${String(i + 1).padStart(2, "0")}.json`);
 const PRECACHE_FILES = [
@@ -24,6 +24,7 @@ const PRECACHE_FILES = [
   "image/flower-header.png",
   "data/calendar.json",
   "data/meta.json",
+  "data/trips.json",
   ...STATION_FILES,
 ];
 

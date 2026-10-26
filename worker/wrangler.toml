@@ -9,3 +9,4 @@ ALLOWED_ORIGINS = "https://chiyoda-timetable.pages.dev,http://localhost:8000,htt
 # ODPT_TOKEN は秘密情報なので、ここには書かない。
 #   本番：npx wrangler secret put ODPT_TOKEN
 #   手元：worker/.dev.vars に ODPT_TOKEN=... と書く（Gitには含めない）
+# ODPT_CHALLENGE_TOKEN（公共交通オープンデータチャレンジ用。JR・東武のデータに使う）も同じ方法で登録する
