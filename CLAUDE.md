@@ -28,6 +28,7 @@
 - 改行コードは`.gitattributes`でLFに統一する（`* text=auto eol=lf`）
 - `wrangler login`（ブラウザでの認証）はコンテナ内で使えない場合がある。Cloudflareは**APIトークンを環境変数**（`CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID`）で渡す方式にする
 - ODPTのアクセストークンは`.env`に置き、Gitに含めない（`.gitignore`に追加）。コードやログに出力しない
+  - `.env`には`ODPT_TOKEN`（通常）と`ODPT_CHALLENGE_TOKEN`（チャレンジ用）の2つ。トークンの値はチャットに貼らせない
 
 ## データソース
 
@@ -179,7 +180,8 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 - 当駅始発の便は、行き先の後ろに「当駅始発」と表示する
 - 各行に分類と車両区分のクラスを付ける（例：`class="train cat-joban op-K"`）
 - 時刻の数字はBarlow（`public/fonts/`、SIL OFL）で大きく表示する
-- 色などのデザインは後で調整する。最初はシンプルでよい
+- テーマの緑は`#00bb85`（RGB 0,187,133。開発者の指定）。`style.css`の`--accent`、`index.html`と`manifest.json`のテーマ色の3か所
+- ヘッダー（緑帯）の右端に花の画像（`public/image/flower-header.png`。元画像`public/image/flower.png`は1.3MBあるので縮小したもの。元画像はコミットしない）
 - 特急（`limited_express: true`）は表示しない
 - 車両区分のアイコンを、時刻と「各駅停車」の間に表示する（`public/icons/train-s.png`・`train-k.png`・`train-e.png`）
 
@@ -202,7 +204,22 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 - 列車を押すと、ウインドウで乗車駅から終点までの時刻を表示する（綾瀬までは`trips.json`、亀有以遠はWorkerの`/jr-train`）
 - 乗換路線に情報があるときだけ、運行情報の下に赤で「乗換路線の運行情報があります」と表示し、押すとウインドウで内容を表示する
 - 運行情報（千代田線・常磐線各駅停車）を時刻表の上に表示する。時刻は「13:58 現在」の形で表示する（ODPTのデータ作成時刻）。取得できない場合は「運行情報を取得できません」と出し、時刻表は表示を続ける
-- 出典（公共交通オープンデータセンター）を表記する
+- 出典は規約の例の形式で、画面下に次の形で表記する（ライセンスの文は不要と開発者が判断）
+  ```
+  公共交通オープンデータセンター: https://ckan.odpt.org/
+    ・東京メトロのGTFSデータ・運行情報
+    ・JR東日本の列車時刻表・運行情報
+    ・東武鉄道の運行情報
+  ```
+  その上に乗換路線の対象の説明（JR常磐快速線、JR武蔵野線（新松戸のりかえ）、東武アーバンパークライン＜野田線＞（柏のりかえ）、JR成田線（我孫子のりかえ）。京成松戸線・流鉄流山線等は表示しない）。JR・東武に関する部分は`class="challenge"`で、2027-03-12以降は`app.js`で隠す
+
+### 列車の詳細時刻（列車を押すと開くウインドウ）
+
+- 見出し：「16:46発 各駅停車 取手 行き」。その下に車両アイコンと列車番号
+- 乗車駅 → 千代田線内の途中駅（折りたたみ。「千代田線内 ◯駅」を押すと開く）→ 綾瀬（または北綾瀬）→ JR区間
+- 綾瀬は、直通便ならJRの発車時刻だけを表示（綾瀬止まりの便は千代田線のデータの到着時刻）
+- JR区間：途中駅は「発」、終点は「着」（途中駅の到着時刻はデータにない）。区間の見出し行は付けない
+- 乗換路線のウインドウでは「JR武蔵野線（新松戸のりかえ）」の形で表示する（路線名はWorkerの`TRANSFER_LINES`）
 
 ### PWA
 
@@ -264,6 +281,19 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 
 **1〜7はすべて完了（2026-10-19）**。現在は画面の細かい修正を随時行っている段階。
 
+2026-10-26に追加：テーマ色の変更、ヘッダーの花の画像、列車の詳細時刻（JR常磐線内を含む）、常磐線各駅停車と乗換路線の運行情報、出典の表記変更。
+
+### 使っているデータの形式
+
+| データ | 形式 | 取得する場所 |
+|---|---|---|
+| 東京メトロの時刻表 | GTFS（zip） | GitHub Actions（毎日） |
+| 東京メトロの運行情報 | ODPT API（`odpt:TrainInformation`、JSON） | Worker |
+| JR常磐線内の時刻 | ODPT API（`odpt:TrainTimetable`、チャレンジ用） | Worker |
+| JR・東武の運行情報 | ODPT API（`odpt:TrainInformation`、チャレンジ用） | Worker |
+
+GTFS-RTは使っていない。遅れや列車位置を出す場合は、JR東日本のGTFS-RTかODPT APIの`odpt:Train`（取得時は常磐線各駅停車が7本しか入っておらず、全列車が入っているか未確認）が候補。
+
 ## 公開先と運用
 
 | 対象 | アドレス・場所 |
@@ -274,13 +304,17 @@ https://api.odpt.org/api/v4/odpt:TrainInformation?odpt:operator=odpt.Operator:To
 
 - **画面（`public/`）の変更**：GitHubにpushすると、Pagesが自動で公開し直す（GitHub連携）
 - **Worker（`worker/`）の変更**：pushでは反映されない。`worker/`で`npx wrangler deploy`を実行する
-  - Cloudflareの認証情報は`worker/.env`（`CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID`）。手元のWorker用のODPTトークンは`worker/.dev.vars`。どちらもGitに含めない
+  - Cloudflareの認証情報は`worker/.env`（`CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID`）。手元のWorker用のODPTトークン（`ODPT_TOKEN`・`ODPT_CHALLENGE_TOKEN`）は`worker/.dev.vars`。どちらもGitに含めない
+  - Workerのsecretは`ODPT_TOKEN`と`ODPT_CHALLENGE_TOKEN`（登録済み）。`wrangler`を使うときは`set -a && . ./.env && set +a`で`worker/.env`を読み込む
   - Workerを公開し直すときに`ALLOWED_ORIGINS`（`wrangler.toml`）を確認する
 - **GitHub Actions**が毎日 午前4時（JST）にデータを更新してmainにコミットする。**作業の前とpushの前に`git pull`する**
 - GitHubへのpushは`gh`（GitHub CLI）のログインを使う。コンテナを作り直すと`gh`とログインが消えるので、`sudo apt-get install gh`のあと、`gh auth login --web`（デバイス認証。`workflow`の権限が必要）でログインし直し、`gh auth setup-git`を実行する
 - コミットの作者メールは非公開用（`344570276+akiraoikawap45-lang@users.noreply.github.com`、リポジトリの`git config`に設定済み）
 - 画面のファイル構成を変えたら、`public/sw.js`の`CACHE_NAME`の番号を上げ、`PRECACHE_FILES`を見直す
 - 開発者はスマホで動作確認する。Service Workerの仕組みで、反映には2回の開き直しが必要なことがある
+
+- 画面の確認はコンテナ内でもできる：`public/`で`python3 -m http.server 8000`、`worker/`で`npx wrangler dev --port 8787`（画面はlocalhostのとき`8787`のWorkerを使う）。スクリーンショットは`~/.cache/ms-playwright/chromium-1187`のChromiumを`playwright-core@1.55.0`（作業用フォルダに入れる）から使った
+- pushとWorkerの公開は、開発者の了承を得てから行う
 
 ## 将来の拡張候補（今は作らない）
 
