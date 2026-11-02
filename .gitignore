@@ -24,3 +24,6 @@ Thumbs.db
 
 # デバッグ用のGTFS書き出し（debug/export_gtfs.py）の出力
 debug/output/
+
+# ヘッダーの花の元画像（1.3MB）。縮小版のflower-header.pngだけを公開する
+public/image/flower.png
