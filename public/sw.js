@@ -5,7 +5,7 @@
 // 新しいデータは、次に開いたときに反映される。
 
 // 画面のファイル（index.html・app.js・style.css）を変えたら、この番号を上げる（全ファイルが一度に入れ替わる）
-const CACHE_NAME = "timetable-v5";
+const CACHE_NAME = "timetable-v6";
 
 const STATION_FILES = Array.from({ length: 18 }, (_, i) => `data/C${String(i + 1).padStart(2, "0")}.json`);
 const PRECACHE_FILES = [
