@@ -310,7 +310,7 @@ GTFS-RTは使っていない。遅れや列車位置を出す場合は、JR東�
 - **GitHub Actions**が毎日 午前4時（JST）にデータを更新してmainにコミットする。**作業の前とpushの前に`git pull`する**
 - GitHubへのpushは`gh`（GitHub CLI）のログインを使う。コンテナを作り直すと`gh`とログインが消えるので、`sudo apt-get install gh`のあと、`gh auth login --web`（デバイス認証。`workflow`の権限が必要）でログインし直し、`gh auth setup-git`を実行する
 - コミットの作者メールは非公開用（`344570276+akiraoikawap45-lang@users.noreply.github.com`、リポジトリの`git config`に設定済み）
-- 画面のファイル構成を変えたら、`public/sw.js`の`CACHE_NAME`の番号を上げ、`PRECACHE_FILES`を見直す
+- 画面のファイル（`index.html`・`app.js`・`style.css`）を変えたら、`public/sw.js`の`CACHE_NAME`の番号を上げる（上げないと新旧のファイルが混ざることがある）。ファイル構成を変えたら`PRECACHE_FILES`も見直す
 - 開発者はスマホで動作確認する。Service Workerの仕組みで、反映には2回の開き直しが必要なことがある
 
 - 画面の確認はコンテナ内でもできる：`public/`で`python3 -m http.server 8000`、`worker/`で`npx wrangler dev --port 8787`（画面はlocalhostのとき`8787`のWorkerを使う）。スクリーンショットは`~/.cache/ms-playwright/chromium-1187`のChromiumを`playwright-core@1.55.0`（作業用フォルダに入れる）から使った

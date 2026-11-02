@@ -4,8 +4,8 @@
 // 地下鉄の駅など電波が弱い場所でも、待たずにすぐ表示できる。
 // 新しいデータは、次に開いたときに反映される。
 
-// 画面のファイルの構成を変えたら、この番号を上げる（古いキャッシュが消える）
-const CACHE_NAME = "timetable-v4";
+// 画面のファイル（index.html・app.js・style.css）を変えたら、この番号を上げる（全ファイルが一度に入れ替わる）
+const CACHE_NAME = "timetable-v5";
 
 const STATION_FILES = Array.from({ length: 18 }, (_, i) => `data/C${String(i + 1).padStart(2, "0")}.json`);
 const PRECACHE_FILES = [

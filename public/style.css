@@ -406,7 +406,7 @@ button {
 
 footer {
   margin-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: calc(64px + env(safe-area-inset-bottom)); /* iPhoneの画面下の操作領域と重ならないように空ける */
   font-size: 0.8rem;
   color: var(--muted);
 }
