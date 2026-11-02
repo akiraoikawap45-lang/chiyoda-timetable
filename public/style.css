@@ -289,7 +289,7 @@ button {
   background: var(--soft);
 }
 
-/* ウインドウ（乗換路線の運行情報、列車の時刻） */
+/* ウインドウ（乗換路線の運行情報、列車の時刻、このアプリについて） */
 .dialog {
   width: min(480px, calc(100% - 32px));
   max-height: calc(100% - 64px);
@@ -431,4 +431,23 @@ footer .credit-list {
 
 footer a {
   color: inherit;
+}
+
+/* 見た目はリンク、中身はウインドウを開くボタン */
+.about-open {
+  padding: 8px 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#about-dialog p {
+  margin: 0 0 12px;
+}
+
+#about-dialog p:last-child {
+  margin-bottom: 0;
 }

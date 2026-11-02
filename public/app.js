@@ -173,6 +173,8 @@ const el = {
   timetable: document.getElementById("timetable"),
   transferDialog: document.getElementById("transfer-dialog"),
   trainDialog: document.getElementById("train-dialog"),
+  aboutDialog: document.getElementById("about-dialog"),
+  aboutOpen: document.getElementById("about-open"),
 };
 
 function isFolded(t) {
@@ -523,7 +525,7 @@ async function loadStationTimetable() {
 
 // ウインドウの「×」と、ウインドウの外側を押したときに閉じる
 function setupDialogs() {
-  for (const dialog of [el.transferDialog, el.trainDialog]) {
+  for (const dialog of [el.transferDialog, el.trainDialog, el.aboutDialog]) {
     dialog.querySelector(".dialog-close").addEventListener("click", () => dialog.close());
     dialog.addEventListener("click", (e) => {
       if (e.target === dialog) dialog.close(); // 外側（背景）を押した
@@ -532,6 +534,7 @@ function setupDialogs() {
   el.trainDialog.addEventListener("close", () => {
     trainDialogKey = null;
   });
+  el.aboutOpen.addEventListener("click", () => el.aboutDialog.showModal());
 }
 
 async function init() {

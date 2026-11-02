@@ -11,7 +11,7 @@
 </head>
 <body>
   <header>
-    <h1>千代田線 綾瀬方面 時刻表</h1>
+    <h1>帰れない綾瀬</h1>
     <!-- 飾りの画像（読み上げ不要なのでaltは空） -->
     <img class="header-flower" src="image/flower-header.png" alt="" width="63" height="32">
   </header>
@@ -60,6 +60,18 @@
     <div class="dialog-body"></div>
   </dialog>
 
+  <!-- このアプリについて（画面下の「このアプリについて」を押すと開く） -->
+  <dialog id="about-dialog" class="dialog">
+    <div class="dialog-head">
+      <h2>このアプリについて</h2>
+      <button type="button" class="dialog-close" aria-label="閉じる">×</button>
+    </div>
+    <div class="dialog-body">
+      <p>（テスト）ここにアプリの概要が入ります。</p>
+      <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSf9RlZi9pAdbuMw4d-HKkhkmlbEoQn_1ptlfqJ0s9qxlNb6RA/viewform" target="_blank" rel="noopener">お問い合わせフォーム</a></p>
+    </div>
+  </dialog>
+
   <footer>
     <!-- チャレンジ用（JR東日本・東武鉄道）の部分は、ライセンスが終わったらapp.jsで隠す（class="challenge"） -->
     <div class="challenge">
@@ -76,6 +88,8 @@
       <li class="challenge">JR東日本の列車時刻表・運行情報</li>
       <li class="challenge">東武鉄道の運行情報</li>
     </ul>
+
+    <button type="button" id="about-open" class="about-open">このアプリについて（問い合わせもこちら）</button>
   </footer>
 
   <script src="app.js"></script>
